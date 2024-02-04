@@ -3,8 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+// import "./assets/css/font-awesome.css";
+// import "./assets/css/jquery.smartmenus.bootstrap.css"
+// import "./assets/css/jquery.simpleLens.css"
+// import "./assets/css/slick.css"
+// import "./assets/css/nouislider.css"
+// import "./assets/css/theme-color/default-theme.css"
+// import "./assets/css/sequence-theme.modern-slide-in.css"
+// import "./assets/css/style.css"
+// import "./assets/css/theme-color/default-theme.css"
+
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
+
 root.render(
   <React.StrictMode>
     <App />
