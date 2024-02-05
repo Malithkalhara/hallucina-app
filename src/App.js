@@ -26,6 +26,15 @@ import { ClientBrand } from "./pages/client-brand/ClientBrand";
 import { Subscribe } from "./pages/subscribe/Subscribe";
 import { Footer } from "./layout/Footer";
 import { Login } from "./pages/login/Login";
+import { Products } from "./pages/products/Products";
+import { Contact } from "./pages/contact/Contact";
+import { ErrorPage } from "./pages/error/ErrorPage";
+import { Account } from "./pages/account/Account";
+import { Cart } from "./pages/cart/Cart";
+import { Checkout } from "./pages/checkout/Checkout";
+import { ProductDetails } from "./pages/product-detail/ProductDetails";
+import { WishList } from "./pages/wishlist/WishList";
+import { Product } from "./pages/product/Product";
 
 
 const jsScripts = [
@@ -58,17 +67,28 @@ function App() {
       {/* <Loading/> */}
       {/* <ScrolToTop /> */}
       <Header/>
-      {/* <Menu/> */}
-      {/* <Slider/> */}
+      <Menu/>
+      <Slider/>
+      <Products/>
       <Promo/>
-      {/* <Banner/> */}
+      <Banner/>
       <Popular/>
-      <Support/>
+      {/* <Support/>
       <Testimonial/>
       <Blog/>
       <ClientBrand/>
       <Subscribe/>
-      <Login/>
+      <Login/> */}
+      {/* <Contact/> */}
+      {/* <ErrorPage/>
+      <Account/> */}
+      {/* <ProductDetails/> */}
+      {/* <Cart/>
+      <Checkout/> */}
+      {/* <WishList/> */}
+      {/* <Product/> */}
+
+      
       <Footer/>
     </div>
   );
