@@ -9,24 +9,64 @@ export const Menu = () => {
       key: 1,
       title: "Home",
       dropdown: null,
+      path: "/"
     },
     {
       key: 2,
       title: "Men",
       dropdown: null,
+      path: "/"
     },
     {
       key: 3,
       title: "Women",
       dropdown: null,
+      path: "/"
     },
     {
       key: 4,
       title: "Kids",
       dropdown: null,
+      path: "/"
     },
     {
       key: 5,
+      title: "Account",
+      dropdown: null,
+      path: "/account"
+    },
+    {
+      key: 6,
+      title: "Login",
+      dropdown: null,
+      path: "/login"
+    },
+    {
+      key: 4,
+      title: "Cart",
+      dropdown: null,
+      path: "/cart"
+    },
+    {
+      key: 4,
+      title: "Checkout",
+      dropdown: null,
+      path: "/checkout"
+    },
+    {
+      key: 4,
+      title: "Contact",
+      dropdown: null,
+      path: "/contact"
+    },
+    {
+      key: 4,
+      title: "ProductDetails",
+      dropdown: null,
+      path: "/product-details"
+    },
+    {
+      key: 7,
       title: "Dropdown",
       dropdown: [
         {
@@ -63,297 +103,22 @@ export const Menu = () => {
                 </button>
               </div>
               <div className="navbar-collapse collapse">
-                {/* <ul className="navbar-nav">
-                  <li>
-                    <a href="index.html">Home</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Men <span className="caret"></span>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <a href="#">Casual</a>
-                      </li>
-                      <li>
-                        <a href="#">Sports</a>
-                      </li>
-                      <li>
-                        <a href="#">Formal</a>
-                      </li>
-                      <li>
-                        <a href="#">Standard</a>
-                      </li>
-                      <li>
-                        <a href="#">T-Shirts</a>
-                      </li>
-                      <li>
-                        <a href="#">Shirts</a>
-                      </li>
-                      <li>
-                        <a href="#">Jeans</a>
-                      </li>
-                      <li>
-                        <a href="#">Trousers</a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          And more.. <span className="caret"></span>
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a href="#">Sleep Wear</a>
-                          </li>
-                          <li>
-                            <a href="#">Sandals</a>
-                          </li>
-                          <li>
-                            <a href="#">Loafers</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Women <span className="caret"></span>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <a href="#">Kurta & Kurti</a>
-                      </li>
-                      <li>
-                        <a href="#">Trousers</a>
-                      </li>
-                      <li>
-                        <a href="#">Casual</a>
-                      </li>
-                      <li>
-                        <a href="#">Sports</a>
-                      </li>
-                      <li>
-                        <a href="#">Formal</a>
-                      </li>
-                      <li>
-                        <a href="#">Sarees</a>
-                      </li>
-                      <li>
-                        <a href="#">Shoes</a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          And more.. <span className="caret"></span>
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a href="#">Sleep Wear</a>
-                          </li>
-                          <li>
-                            <a href="#">Sandals</a>
-                          </li>
-                          <li>
-                            <a href="#">Loafers</a>
-                          </li>
-                          <li>
-                            <a href="#">
-                              And more.. <span className="caret"></span>
-                            </a>
-                            <ul className="dropdown-menu">
-                              <li>
-                                <a href="#">Rings</a>
-                              </li>
-                              <li>
-                                <a href="#">Earrings</a>
-                              </li>
-                              <li>
-                                <a href="#">Jewellery Sets</a>
-                              </li>
-                              <li>
-                                <a href="#">Lockets</a>
-                              </li>
-                              <li className="disabled">
-                                <a className="disabled" href="#">
-                                  Disabled item
-                                </a>
-                              </li>
-                              <li>
-                                <a href="#">Jeans</a>
-                              </li>
-                              <li>
-                                <a href="#">Polo T-Shirts</a>
-                              </li>
-                              <li>
-                                <a href="#">SKirts</a>
-                              </li>
-                              <li>
-                                <a href="#">Jackets</a>
-                              </li>
-                              <li>
-                                <a href="#">Tops</a>
-                              </li>
-                              <li>
-                                <a href="#">Make Up</a>
-                              </li>
-                              <li>
-                                <a href="#">Hair Care</a>
-                              </li>
-                              <li>
-                                <a href="#">Perfumes</a>
-                              </li>
-                              <li>
-                                <a href="#">Skin Care</a>
-                              </li>
-                              <li>
-                                <a href="#">Hand Bags</a>
-                              </li>
-                              <li>
-                                <a href="#">Single Bags</a>
-                              </li>
-                              <li>
-                                <a href="#">Travel Bags</a>
-                              </li>
-                              <li>
-                                <a href="#">Wallets & Belts</a>
-                              </li>
-                              <li>
-                                <a href="#">Sunglases</a>
-                              </li>
-                              <li>
-                                <a href="#">Nail</a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Kids <span className="caret"></span>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <a href="#">Casual</a>
-                      </li>
-                      <li>
-                        <a href="#">Sports</a>
-                      </li>
-                      <li>
-                        <a href="#">Formal</a>
-                      </li>
-                      <li>
-                        <a href="#">Standard</a>
-                      </li>
-                      <li>
-                        <a href="#">T-Shirts</a>
-                      </li>
-                      <li>
-                        <a href="#">Shirts</a>
-                      </li>
-                      <li>
-                        <a href="#">Jeans</a>
-                      </li>
-                      <li>
-                        <a href="#">Trousers</a>
-                      </li>
-                      <li>
-                        <a href="#">
-                          And more.. <span className="caret"></span>
-                        </a>
-                        <ul className="dropdown-menu">
-                          <li>
-                            <a href="#">Sleep Wear</a>
-                          </li>
-                          <li>
-                            <a href="#">Sandals</a>
-                          </li>
-                          <li>
-                            <a href="#">Loafers</a>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Sports</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Digital <span className="caret"></span>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <a href="#">Camera</a>
-                      </li>
-                      <li>
-                        <a href="#">Mobile</a>
-                      </li>
-                      <li>
-                        <a href="#">Tablet</a>
-                      </li>
-                      <li>
-                        <a href="#">Laptop</a>
-                      </li>
-                      <li>
-                        <a href="#">Accesories</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="#">Furniture</a>
-                  </li>
-                  <li>
-                    <a href="blog-archive.html">
-                      Blog <span className="caret"></span>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <a href="blog-archive.html">Blog Style 1</a>
-                      </li>
-                      <li>
-                        <a href="blog-archive-2.html">Blog Style 2</a>
-                      </li>
-                      <li>
-                        <a href="blog-single.html">Blog Single</a>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <a href="contact.html">Contact</a>
-                  </li>
-                  <li>
-                    <a href="#">
-                      Pages <span className="caret"></span>
-                    </a>
-                    <ul className="dropdown-menu">
-                      <li>
-                        <a href="product.html">Shop Page</a>
-                      </li>
-                      <li>
-                        <a href="product-detail.html">Shop Single</a>
-                      </li>
-                      <li>
-                        <a href="404.html">404 Page</a>
-                      </li>
-                    </ul>
-                  </li>
-                </ul> */}
                 <div className="navbar-nav">
                   {navHeaders.map((header) => {
                     if (header.dropdown === null) {
                       return (
-                        <a
+                        <Link
                           id={header.key}
                           className={
                             active === header.key
                               ? "nav-item nav-link active"
                               : "nav-item nav-link"
                           }
-                          href="#"
+                          to={header.path}
                           onClick={(e) => handleClick(e)}
                         >
                           {header.title}
-                        </a>
+                        </Link>
                       );
                     } else {
                       return (
@@ -363,7 +128,7 @@ export const Menu = () => {
                             href="#"
                             id="navbarDropdown"
                             role="button"
-                            data-toggle="dropdown"
+                            data-bs-toggle="dropdown"
                             aria-haspopup="true"
                             aria-expanded="false"
                           >
@@ -394,7 +159,7 @@ export const Menu = () => {
                       href="#"
                       id="navbarDropdown"
                       role="button"
-                      data-toggle="dropdown"
+                      data-bs-toggle="dropdown"
                       aria-haspopup="true"
                       aria-expanded="false"
                     >

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Contact = () => {
+const Contact = () => {
   return (
     <div>
       <section id="aa-catg-head-banner">
@@ -133,3 +133,6 @@ export const Contact = () => {
     </div>
   );
 };
+
+
+export default Contact;

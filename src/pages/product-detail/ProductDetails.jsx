@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const ProductDetails = () => {
+const ProductDetails = () => {
   return (
     <div>
       <section id="aa-catg-head-banner">
@@ -429,3 +429,5 @@ export const ProductDetails = () => {
     </div>
   )
 }
+
+export default ProductDetails;

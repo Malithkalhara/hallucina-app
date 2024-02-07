@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Account = () => {
+const Account = () => {
   return (
     <div>
       <section id="aa-catg-head-banner">
@@ -84,3 +84,5 @@ export const Account = () => {
     </div>
   );
 };
+
+export default Account;

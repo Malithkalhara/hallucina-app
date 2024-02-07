@@ -7,7 +7,7 @@ export const Support = () => {
         <div className="container">
           <div className="row">
             <div className="col-md-12">
-              <div className="aa-support-area">
+              <div className="aa-support-area d-flex">
                 <div className="col-md-4 col-sm-4 col-xs-12">
                   <div className="aa-support-single">
                     <span className="fa fa-truck"></span>

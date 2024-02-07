@@ -1,6 +1,6 @@
 import React from "react";
 
-export const ErrorPage = () => {
+const ErrorPage = () => {
   return (
     <div>
       <section id="aa-error">
@@ -24,3 +24,5 @@ export const ErrorPage = () => {
     </div>
   );
 };
+
+export default ErrorPage;

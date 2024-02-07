@@ -34,7 +34,7 @@ export const Products = () => {
                     </ul>
 
                     <div className="tab-content">
-                      <div className="tab-pane fade in active" id="men">
+                      <div className="tab-pane in active" id="men">
                         <ul className="aa-product-catg">
                           <li>
                             <figure>

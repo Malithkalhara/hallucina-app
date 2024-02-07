@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Cart = () => {
+const Cart = () => {
   return (
     <div>
       <section id="aa-catg-head-banner">
@@ -180,3 +180,5 @@ export const Cart = () => {
     </div>
   );
 };
+
+export default Cart;

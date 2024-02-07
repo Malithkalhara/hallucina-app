@@ -28,7 +28,7 @@ export const Popular = () => {
                   </ul>
 
                   <div className="tab-content">
-                    <div className="tab-pane fade in active" id="popular">
+                    <div className="tab-pane in active" id="popular">
                       <ul className="aa-product-catg aa-popular-slider">
                         <li>
                           <figure>

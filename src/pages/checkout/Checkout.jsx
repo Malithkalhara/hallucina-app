@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Checkout = () => {
+const Checkout = () => {
   return (
     <div>
       <section id="aa-catg-head-banner">
@@ -487,3 +487,5 @@ export const Checkout = () => {
     </div>
   );
 };
+
+export default Checkout;
