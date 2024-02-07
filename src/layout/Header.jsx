@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <div>
       <header id="aa-header">
-        <div className="aa-header-top">
+        {/* <div className="aa-header-top">
           <div className="container">
             <div className="row">
               <div className="col-md-12">
@@ -113,7 +113,7 @@ export const Header = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="aa-header-bottom">
           <div className="container">

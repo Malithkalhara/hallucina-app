@@ -5,7 +5,6 @@ import Loading from "./pages/loading/Loading";
 import { ScrolToTop } from "./components/ScrolToTop";
 import { Header } from "./layout/Header";
 import { Menu } from "./pages/menu/Menu";
-import 'bootstrap/dist/css/bootstrap.css';
 import "./assets/css/font-awesome.css";
 import "./assets/css/jquery.smartmenus.bootstrap.css"
 import "./assets/css/jquery.simpleLens.css"
@@ -15,39 +14,11 @@ import "./assets/css/theme-color/default-theme.css"
 import "./assets/css/sequence-theme.modern-slide-in.css"
 import "./assets/css/style.css"
 import "./assets/css/theme-color/default-theme.css"
-import { Slider } from "./pages/slider/Slider";
-import { Promo } from "./pages/promo/Promo";
-import { Banner } from "./pages/banner/Banner";
-import { Popular } from "./pages/popular/Popular";
-import { Support } from "./pages/support/Support";
-import { Testimonial } from "./pages/testimonial/Testimonial";
-import { Blog } from "./pages/blog/Blog";
-import { ClientBrand } from "./pages/client-brand/ClientBrand";
-import { Subscribe } from "./pages/subscribe/Subscribe";
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import { Footer } from "./layout/Footer";
-import { Login } from "./pages/login/Login";
-import { Products } from "./pages/products/Products";
-import { Contact } from "./pages/contact/Contact";
-import { ErrorPage } from "./pages/error/ErrorPage";
-import { Account } from "./pages/account/Account";
-import { Cart } from "./pages/cart/Cart";
-import { Checkout } from "./pages/checkout/Checkout";
-import { ProductDetails } from "./pages/product-detail/ProductDetails";
-import { WishList } from "./pages/wishlist/WishList";
-import { Product } from "./pages/product/Product";
+import { Body } from "./layout/Body";
 
-
-const jsScripts = [
-  "./assets/js/bootstrap.js",
-  "./assets/js/custom.js",
-  "./assets/js/jquery.simpleGallery.js",
-  "./assets/js/jquery.smartmenus.bootstrap.js",
-  "./assets/js/smartmenus.js",
-  "./assets/js/nouislider.js",
-  "./assets/js/sequence-theme.modern-slide-in.js",
-  "./assets/js/sequence.js",
-  "./assets/js/slick.js",
-];
 
 function App() {
   // useEffect(() => {
@@ -62,33 +33,12 @@ function App() {
   //   });
   // }, []);
 
+
   return (
     <div className="App">
-      {/* <Loading/> */}
-      {/* <ScrolToTop /> */}
       <Header/>
       <Menu/>
-      <Slider/>
-      <Products/>
-      <Promo/>
-      <Banner/>
-      <Popular/>
-      {/* <Support/>
-      <Testimonial/>
-      <Blog/>
-      <ClientBrand/>
-      <Subscribe/>
-      <Login/> */}
-      {/* <Contact/> */}
-      {/* <ErrorPage/>
-      <Account/> */}
-      {/* <ProductDetails/> */}
-      {/* <Cart/>
-      <Checkout/> */}
-      {/* <WishList/> */}
-      {/* <Product/> */}
-
-      
+      <Body/>
       <Footer/>
     </div>
   );

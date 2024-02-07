@@ -1,27 +1,69 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export const Menu = () => {
+  const [collapsed, setCollapsed] = React.useState(true);
+  const [active, setActive] = React.useState(1);
+  const navHeaders = [
+    {
+      key: 1,
+      title: "Home",
+      dropdown: null,
+    },
+    {
+      key: 2,
+      title: "Men",
+      dropdown: null,
+    },
+    {
+      key: 3,
+      title: "Women",
+      dropdown: null,
+    },
+    {
+      key: 4,
+      title: "Kids",
+      dropdown: null,
+    },
+    {
+      key: 5,
+      title: "Dropdown",
+      dropdown: [
+        {
+          key: 1,
+          title: "Option 1",
+        },
+      ],
+    },
+  ];
+
+  const handleClick = (e) => {
+    setActive(e.target.id);
+  };
   return (
     <div>
       <section id="menu">
         <div className="container">
-          <div className="menu-area">
-            <div className="navbar navbar-default" role="navigation">
+          <nav className="menu-area">
+            <div
+              className="navbar navbar-dark navbar-expand-lg"
+              role="navigation"
+            >
               <div className="navbar-header">
                 <button
+                  className="navbar-toggler"
                   type="button"
-                  className="navbar-toggle"
                   data-toggle="collapse"
-                  data-target=".navbar-collapse"
+                  data-target="#navbarNavAltMarkup"
+                  aria-controls="navbarNavAltMarkup"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
                 >
-                  <span className="sr-only">Toggle navigation</span>
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
-                  <span className="icon-bar"></span>
+                  <span className="navbar-toggler-icon"></span>
                 </button>
               </div>
               <div className="navbar-collapse collapse">
-                <ul className="nav navbar-nav">
+                {/* <ul className="navbar-nav">
                   <li>
                     <a href="index.html">Home</a>
                   </li>
@@ -295,10 +337,89 @@ export const Menu = () => {
                       </li>
                     </ul>
                   </li>
-                </ul>
+                </ul> */}
+                <div className="navbar-nav">
+                  {navHeaders.map((header) => {
+                    if (header.dropdown === null) {
+                      return (
+                        <a
+                          id={header.key}
+                          className={
+                            active === header.key
+                              ? "nav-item nav-link active"
+                              : "nav-item nav-link"
+                          }
+                          href="#"
+                          onClick={(e) => handleClick(e)}
+                        >
+                          {header.title}
+                        </a>
+                      );
+                    } else {
+                      return (
+                        <li className="nav-item dropdown">
+                          <a
+                            className="nav-link dropdown-toggle"
+                            href="#"
+                            id="navbarDropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                          >
+                            Dropdown
+                          </a>
+                          <div
+                            className="dropdown-menu"
+                            aria-labelledby="navbarDropdown"
+                          >
+                            <a className="dropdown-item" href="#">
+                              Action
+                            </a>
+                            <a className="dropdown-item" href="#">
+                              Another action
+                            </a>
+                            <div className="dropdown-divider" />
+                            <a className="dropdown-item" href="#">
+                              Something else here
+                            </a>
+                          </div>
+                        </li>
+                      );
+                    }
+                  })}
+                  <div className="nav-item dropdown">
+                    <a
+                      className="nav-link dropdown-toggle"
+                      href="#"
+                      id="navbarDropdown"
+                      role="button"
+                      data-toggle="dropdown"
+                      aria-haspopup="true"
+                      aria-expanded="false"
+                    >
+                      Dropdown
+                    </a>
+                    <div
+                      className="dropdown-menu"
+                      aria-labelledby="navbarDropdown"
+                    >
+                      <a className="dropdown-item" href="#">
+                        Action
+                      </a>
+                      <a className="dropdown-item" href="#">
+                        Another action
+                      </a>
+                      <div className="dropdown-divider" />
+                      <a className="dropdown-item" href="#">
+                        Something else here
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
+          </nav>
         </div>
       </section>
     </div>
