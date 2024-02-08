@@ -159,15 +159,15 @@ export const Menu = () => {
                       href="#"
                       id="navbarDropdown"
                       role="button"
-                      data-bs-toggle="dropdown"
-                      aria-haspopup="true"
-                      aria-expanded="false"
+                      dataBsToggle="dropdown"
+                      ariaHaspopup="true"
+                      ariaExpanded="false"
                     >
                       Dropdown
                     </a>
                     <div
                       className="dropdown-menu"
-                      aria-labelledby="navbarDropdown"
+                      ariaLabelledby="navbarDropdown"
                     >
                       <a className="dropdown-item" href="#">
                         Action
