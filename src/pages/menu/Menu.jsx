@@ -9,61 +9,61 @@ export const Menu = () => {
       key: 1,
       title: "Home",
       dropdown: null,
-      path: "/"
+      path: "/",
     },
     {
       key: 2,
       title: "Men",
       dropdown: null,
-      path: "/"
+      path: "/",
     },
     {
       key: 3,
       title: "Women",
       dropdown: null,
-      path: "/"
+      path: "/",
     },
     {
       key: 4,
       title: "Kids",
       dropdown: null,
-      path: "/"
+      path: "/",
     },
     {
       key: 5,
       title: "Account",
       dropdown: null,
-      path: "/account"
+      path: "/account",
     },
     {
       key: 6,
       title: "Login",
       dropdown: null,
-      path: "/login"
+      path: "/login",
     },
     {
       key: 4,
       title: "Cart",
       dropdown: null,
-      path: "/cart"
+      path: "/cart",
     },
     {
       key: 4,
       title: "Checkout",
       dropdown: null,
-      path: "/checkout"
+      path: "/checkout",
     },
     {
       key: 4,
       title: "Contact",
       dropdown: null,
-      path: "/contact"
+      path: "/contact",
     },
     {
       key: 4,
       title: "ProductDetails",
       dropdown: null,
-      path: "/product-details"
+      path: "/product-details",
     },
     {
       key: 7,
@@ -93,8 +93,8 @@ export const Menu = () => {
                 <button
                   className="navbar-toggler"
                   type="button"
-                  data-toggle="collapse"
-                  data-target="#navbarNavAltMarkup"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarNavAltMarkup"
                   aria-controls="navbarNavAltMarkup"
                   aria-expanded="false"
                   aria-label="Toggle navigation"
@@ -102,13 +102,13 @@ export const Menu = () => {
                   <span className="navbar-toggler-icon"></span>
                 </button>
               </div>
-              <div className="navbar-collapse collapse">
+              <div className="navbar-collapse collapse" id="navbarNavAltMarkup">
                 <div className="navbar-nav">
                   {navHeaders.map((header) => {
                     if (header.dropdown === null) {
                       return (
                         <Link
-                          id={header.key}
+                          key={header.key}
                           className={
                             active === header.key
                               ? "nav-item nav-link active"
@@ -122,21 +122,21 @@ export const Menu = () => {
                       );
                     } else {
                       return (
-                        <li className="nav-item dropdown">
+                        <li key={header.key} className="nav-item dropdown">
                           <a
                             className="nav-link dropdown-toggle"
                             href="#"
-                            id="navbarDropdown"
+                            id={`navbarDropdown_${header.key}`}
                             role="button"
                             data-bs-toggle="dropdown"
                             aria-haspopup="true"
                             aria-expanded="false"
                           >
-                            Dropdown
+                            {header.title}
                           </a>
                           <div
                             className="dropdown-menu"
-                            aria-labelledby="navbarDropdown"
+                            aria-labelledby={`navbarDropdown_${header.key}`}
                           >
                             <a className="dropdown-item" href="#">
                               Action
@@ -153,34 +153,6 @@ export const Menu = () => {
                       );
                     }
                   })}
-                  <div className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      dataBsToggle="dropdown"
-                      ariaHaspopup="true"
-                      ariaExpanded="false"
-                    >
-                      Dropdown
-                    </a>
-                    <div
-                      className="dropdown-menu"
-                      ariaLabelledby="navbarDropdown"
-                    >
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                      <div className="dropdown-divider" />
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
