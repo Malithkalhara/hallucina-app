@@ -1,80 +1,45 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+
+import NavDropdown from 'react-bootstrap/NavDropdown';
+
+
 export const Menu = () => {
   const [collapsed, setCollapsed] = React.useState(true);
   const [active, setActive] = React.useState(1);
   const navHeaders = [
     {
-      key: 1,
-      title: "Home",
-      dropdown: null,
-      path: "/"
-    },
-    {
       key: 2,
       title: "Men",
-      dropdown: null,
+      content : ["Costume Sets","Tops","Pants"],
       path: "/"
     },
     {
       key: 3,
       title: "Women",
-      dropdown: null,
+      content : ["Costume Sets","Dress", "Skirts","Tops","Pants"],
       path: "/"
     },
     {
       key: 4,
-      title: "Kids",
-      dropdown: null,
+      title: "Accessories",
+      content : ["Pocket belts and Bags","Belts", "Cuffs","Holsters","Footwear"],
       path: "/"
     },
     {
       key: 5,
-      title: "Account",
-      dropdown: null,
-      path: "/account"
+      title: "Jewelery",
+      content : ["Hair","Neck", "Body Jewelery","Piercings"],
+      path: "/"
     },
     {
       key: 6,
-      title: "Login",
+      title: "Offers",
       dropdown: null,
       path: "/login"
     },
-    {
-      key: 4,
-      title: "Cart",
-      dropdown: null,
-      path: "/cart"
-    },
-    {
-      key: 4,
-      title: "Checkout",
-      dropdown: null,
-      path: "/checkout"
-    },
-    {
-      key: 4,
-      title: "Contact",
-      dropdown: null,
-      path: "/contact"
-    },
-    {
-      key: 4,
-      title: "ProductDetails",
-      dropdown: null,
-      path: "/product-details"
-    },
-    {
-      key: 7,
-      title: "Dropdown",
-      dropdown: [
-        {
-          key: 1,
-          title: "Option 1",
-        },
-      ],
-    },
+    
   ];
 
   const handleClick = (e) => {
@@ -84,7 +49,7 @@ export const Menu = () => {
     <div>
       <section id="menu">
         <div className="container">
-          <nav className="menu-area">
+          <nav className="menu-area d-flex justify-content-end">
             <div
               className="navbar navbar-dark navbar-expand-lg"
               role="navigation"
@@ -123,64 +88,23 @@ export const Menu = () => {
                     } else {
                       return (
                         <li className="nav-item dropdown">
-                          <a
-                            className="nav-link dropdown-toggle"
-                            href="#"
-                            id="navbarDropdown"
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            Dropdown
-                          </a>
-                          <div
-                            className="dropdown-menu"
-                            aria-labelledby="navbarDropdown"
-                          >
-                            <a className="dropdown-item" href="#">
-                              Action
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              Another action
-                            </a>
-                            <div className="dropdown-divider" />
-                            <a className="dropdown-item" href="#">
-                              Something else here
-                            </a>
-                          </div>
+                          <NavDropdown title={header.title} id="basic-nav-dropdown">
+                          {header.content.map((item, index) => (
+                            <NavDropdown.Item key={index} href={`#action/${index + 1}`}>
+                              {item}
+                            </NavDropdown.Item>
+                          ))}
+                          </NavDropdown>
                         </li>
                       );
                     }
                   })}
-                  <div className="nav-item dropdown">
-                    <a
-                      className="nav-link dropdown-toggle"
-                      href="#"
-                      id="navbarDropdown"
-                      role="button"
-                      dataBsToggle="dropdown"
-                      ariaHaspopup="true"
-                      ariaExpanded="false"
-                    >
-                      Dropdown
-                    </a>
-                    <div
-                      className="dropdown-menu"
-                      ariaLabelledby="navbarDropdown"
-                    >
-                      <a className="dropdown-item" href="#">
-                        Action
-                      </a>
-                      <a className="dropdown-item" href="#">
-                        Another action
-                      </a>
-                      <div className="dropdown-divider" />
-                      <a className="dropdown-item" href="#">
-                        Something else here
-                      </a>
-                    </div>
-                  </div>
+                    <NavDropdown title="About" id="basic-nav-dropdown">
+                      <NavDropdown.Item href="#action/3.1">About Us</NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.2">Contact Us</NavDropdown.Item>
+                      <NavDropdown.Divider />
+                      <NavDropdown.Item href="#action/3.4">Reviews</NavDropdown.Item>
+                    </NavDropdown>
                 </div>
               </div>
             </div>

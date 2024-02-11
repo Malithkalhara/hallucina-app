@@ -4,6 +4,7 @@ import Loading from "./pages/loading/Loading";
 import { ScrolToTop } from "./components/ScrolToTop";
 import { Header } from "./layout/Header";
 import { Menu } from "./pages/menu/Menu";
+import { NavBar } from "./components/NavBar";
 import 'bootstrap/dist/css/bootstrap.css';
 import "./App.css";
 import "./assets/css/font-awesome.css";
@@ -36,6 +37,7 @@ function App() {
   return (
     <div className="App">
       <Header/>
+    {/* <NavBar/> */}
       <Menu/>
       <Body/>
       <Footer/>
