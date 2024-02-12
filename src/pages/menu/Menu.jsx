@@ -13,31 +13,31 @@ export const Menu = () => {
       key: 2,
       title: "Men",
       content : ["Costume Sets","Tops","Pants"],
-      path: "/"
+      path: "/product-details"    
     },
     {
       key: 3,
       title: "Women",
-      content : ["Costume Sets","Dress", "Skirts","Tops","Pants"],
-      path: "/"
+      content : ["Costume Sets","Dresses", "Skirts","Tops","Pants"],
+      path: "/product-details"
     },
     {
       key: 4,
       title: "Accessories",
       content : ["Pocket belts and Bags","Belts", "Cuffs","Holsters","Footwear"],
-      path: "/"
+      path: "/product-details"
     },
     {
       key: 5,
       title: "Jewelery",
       content : ["Hair","Neck", "Body Jewelery","Piercings"],
-      path: "/"
+      path: "/product-details"
     },
     {
       key: 6,
       title: "Offers",
       dropdown: null,
-      path: "/login"
+      path: "/Offer"
     },
     
   ];
@@ -90,7 +90,7 @@ export const Menu = () => {
                         <li className="nav-item dropdown">
                           <NavDropdown title={header.title} id="basic-nav-dropdown">
                           {header.content.map((item, index) => (
-                            <NavDropdown.Item key={index} href={`#action/${index + 1}`}>
+                            <NavDropdown.Item  key={index} href={`${header.path}`}>
                               {item}
                             </NavDropdown.Item>
                           ))}
@@ -101,7 +101,7 @@ export const Menu = () => {
                   })}
                     <NavDropdown title="About" id="basic-nav-dropdown">
                       <NavDropdown.Item href="#action/3.1">About Us</NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.2">Contact Us</NavDropdown.Item>
+                      <NavDropdown.Item href="Contact" path="/Contact" >Contact Us</NavDropdown.Item>
                       <NavDropdown.Divider />
                       <NavDropdown.Item href="#action/3.4">Reviews</NavDropdown.Item>
                     </NavDropdown>
