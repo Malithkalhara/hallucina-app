@@ -1,5 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 export const Header = () => {
   return (
@@ -12,17 +15,19 @@ export const Header = () => {
                 <div className="aa-header-bottom-area">
                   <div className="row w-100">
                     <div className="col-3">
-                      <div
-                        className="aa-logo"
-                      >
+                      <div className="aa-logo">
                         <Link to="/">
-                          <img src="img/Picture1.jpg" alt="logo img" style={{
-                            width: "150px",
-                          }}></img>
+                          <img
+                            src="img/Picture1.jpg"
+                            alt="logo img"
+                            style={{
+                              width: "100px",
+                            }}
+                          ></img>
                         </Link>
                       </div>
                     </div>
-                    <div className="col-3">
+                    <div className="col-6 d-flex justify-content-center align-items-center">
                       <div className="aa-search-box">
                         <form action="">
                           <input
@@ -38,12 +43,12 @@ export const Header = () => {
                       </div>
                     </div>
 
-                    <div className="col-6">
-                      <div className="d-flex">
-                        <div className="aa-cartbox">
+                    <div className="col-3 d-flex align-items-center justify-content-end">
+                      <div className="d-flex justify-content-center align-items-center">
+                        <div className="aa-cartbox d-flex justify-content-center">
                           <a className="aa-cart-link" href="#">
-                            <span className="fa fa-shopping-basket"></span>
-                            <span className="aa-cart-title">SHOPPING CART</span>
+                            <FontAwesomeIcon icon={faCartShopping} />
+                            {/* <span className="aa-cart-title">SHOPPING CART</span> */}
                             <span className="aa-cart-notify">2</span>
                           </a>
                           <div className="aa-cartbox-summary">
@@ -101,10 +106,8 @@ export const Header = () => {
                             </a>
                           </div>
                         </div>
-                        <div>
-                          <button className="aa-browse-btn">
-                            Login | Register
-                          </button>
+                        <div className="aa-browse-btn">
+                          <FontAwesomeIcon icon={faUser} />
                         </div>
                       </div>
                     </div>
