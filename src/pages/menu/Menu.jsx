@@ -7,74 +7,145 @@ export const Menu = () => {
   const navHeaders = [
     {
       key: 1,
-      title: "Home",
-      dropdown: null,
+      title: "Women",
+      dropdown: [
+        {
+          key: 1,
+          title: "Costume Sets",
+          path: "/",
+        },
+        {
+          key: 2,
+          title: "Dresses",
+          path: "/",
+        },
+        {
+          key: 3,
+          title: "Skirts",
+          path: "/",
+        },
+        {
+          key: 4,
+          title: "Tops",
+          path: "/",
+        },
+        {
+          key: 5,
+          title: "Pants",
+          path: "/",
+        }
+      ],
       path: "/",
     },
     {
       key: 2,
       title: "Men",
-      dropdown: null,
+      dropdown: [
+        {
+          key: 1,
+          title: "Costume Sets",
+          path: "/",
+        },
+        {
+          key: 1,
+          title: "Tops",
+          path: "/",
+        },
+        {
+          key: 1,
+          title: "Pants",
+          path: "/",
+        },
+      ],
       path: "/",
     },
     {
       key: 3,
-      title: "Women",
-      dropdown: null,
+      title: "Accessories",
+      dropdown: [
+        {
+          key: 1,
+          title: "Pocket Belts and Bags",
+          path: "/",
+        },
+        {
+          key: 2,
+          title: "Accessories",
+          path: "/",
+        },
+        {
+          key: 3,
+          title: "Cuffs",
+          path: "/",
+        },
+        {
+          key: 4,
+          title: "Holsters",
+          path: "/",
+        },
+        {
+          key: 5,
+          title: "Footwear",
+          path: "/",
+        }
+      ],
       path: "/",
     },
     {
       key: 4,
-      title: "Kids",
-      dropdown: null,
+      title: "Jewelery",
+      dropdown: [
+        {
+          key: 1,
+          title: "Hair",
+          path: "/",
+        },
+        {
+          key: 2,
+          title: "Neck",
+          path: "/",
+        },
+        {
+          key: 3,
+          title: "Body Jewelery",
+          path: "/",
+        },
+        {
+          key: 4,
+          title: "Piercings",
+          path: "/",
+        },
+      ],
       path: "/",
     },
     {
       key: 5,
-      title: "Account",
+      title: "Offers",
       dropdown: null,
       path: "/account",
     },
     {
       key: 6,
-      title: "Login",
-      dropdown: null,
-      path: "/login",
-    },
-    {
-      key: 4,
-      title: "Cart",
-      dropdown: null,
-      path: "/cart",
-    },
-    {
-      key: 4,
-      title: "Checkout",
-      dropdown: null,
-      path: "/checkout",
-    },
-    {
-      key: 4,
-      title: "Contact",
-      dropdown: null,
-      path: "/contact",
-    },
-    {
-      key: 4,
-      title: "ProductDetails",
-      dropdown: null,
-      path: "/product-details",
-    },
-    {
-      key: 7,
-      title: "Dropdown",
+      title: "About",
       dropdown: [
         {
           key: 1,
-          title: "Option 1",
+          title: "About Us",
+          path: "/",
         },
+        {
+          key: 2,
+          title: "Contact Us",
+          path: "/",
+        },
+        {
+          key: 3,
+          title: "Reviews",
+          path: "/",
+        }
       ],
-    },
+      path: "/login",
+    }
   ];
 
   const handleClick = (e) => {
@@ -138,16 +209,17 @@ export const Menu = () => {
                             className="dropdown-menu"
                             aria-labelledby={`navbarDropdown_${header.key}`}
                           >
-                            <a className="dropdown-item" href="#">
-                              Action
-                            </a>
-                            <a className="dropdown-item" href="#">
-                              Another action
-                            </a>
-                            <div className="dropdown-divider" />
-                            <a className="dropdown-item" href="#">
-                              Something else here
-                            </a>
+                            {header.dropdown.map((item) => {
+                              return (
+                                <Link
+                                  key={item.key}
+                                  className="dropdown-item"
+                                  to={item.path}
+                                >
+                                  {item.title}
+                                </Link>
+                              );
+                            })}
                           </div>
                         </li>
                       );
