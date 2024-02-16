@@ -366,7 +366,7 @@ img {
   float: left;
   display: inline;
   width: 100%;
-  padding: 20px 0;
+  /* padding: 20px 0; */
 }
 #aa-header .aa-header-bottom .aa-header-bottom-area {
   float: left;
@@ -447,7 +447,7 @@ img {
 #aa-header .aa-header-bottom .aa-cartbox .aa-cart-link {
   font-size: 22px;
   position: relative;
-  width: 120px;
+  width: 40px;
   height: auto;
   display: block;
 }

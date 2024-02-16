@@ -33,7 +33,7 @@ export const Menu = () => {
           key: 5,
           title: "Pants",
           path: "/",
-        }
+        },
       ],
       path: "/",
     },
@@ -87,7 +87,7 @@ export const Menu = () => {
           key: 5,
           title: "Footwear",
           path: "/",
-        }
+        },
       ],
       path: "/",
     },
@@ -142,10 +142,10 @@ export const Menu = () => {
           key: 3,
           title: "Reviews",
           path: "/",
-        }
+        },
       ],
       path: "/login",
-    }
+    },
   ];
 
   const handleClick = (e) => {
@@ -158,8 +158,7 @@ export const Menu = () => {
           <nav className="menu-area">
             <div
               className="navbar navbar-dark navbar-expand-lg"
-              role="navigation"
-            >
+              role="navigation">
               <div className="navbar-header">
                 <button
                   className="navbar-toggler"
@@ -168,60 +167,64 @@ export const Menu = () => {
                   data-bs-target="#navbarNavAltMarkup"
                   aria-controls="navbarNavAltMarkup"
                   aria-expanded="false"
-                  aria-label="Toggle navigation"
-                >
+                  aria-label="Toggle navigation">
                   <span className="navbar-toggler-icon"></span>
                 </button>
               </div>
-              <div className="navbar-collapse collapse" id="navbarNavAltMarkup">
-                <div className="navbar-nav">
+              <div
+                className="navbar-collapse collapse"
+                id="navbarNavAltMarkup"
+                style={{ justifyContent: "center" }}>
+                <div
+                  className="navbar-nav ml-auto"
+                  style={{ justifyContent: "center" }}>
                   {navHeaders.map((header) => {
                     if (header.dropdown === null) {
                       return (
-                        <Link
-                          key={header.key}
-                          className={
-                            active === header.key
-                              ? "nav-item nav-link active"
-                              : "nav-item nav-link"
-                          }
-                          to={header.path}
-                          onClick={(e) => handleClick(e)}
-                        >
-                          {header.title}
-                        </Link>
+                        <div style={{ padding: "0px 10px" }}>
+                          <Link
+                            key={header.key}
+                            className={
+                              active === header.key
+                                ? "nav-item nav-link active"
+                                : "nav-item nav-link"
+                            }
+                            to={header.path}
+                            onClick={(e) => handleClick(e)}>
+                            {header.title}
+                          </Link>
+                        </div>
                       );
                     } else {
                       return (
-                        <li key={header.key} className="nav-item dropdown">
-                          <a
-                            className="nav-link dropdown-toggle"
-                            href="#"
-                            id={`navbarDropdown_${header.key}`}
-                            role="button"
-                            data-bs-toggle="dropdown"
-                            aria-haspopup="true"
-                            aria-expanded="false"
-                          >
-                            {header.title}
-                          </a>
-                          <div
-                            className="dropdown-menu"
-                            aria-labelledby={`navbarDropdown_${header.key}`}
-                          >
-                            {header.dropdown.map((item) => {
-                              return (
-                                <Link
-                                  key={item.key}
-                                  className="dropdown-item"
-                                  to={item.path}
-                                >
-                                  {item.title}
-                                </Link>
-                              );
-                            })}
-                          </div>
-                        </li>
+                        <div style={{ padding: "0px 10px" }}>
+                          <li key={header.key} className="nav-item dropdown">
+                            <a
+                              className="nav-link dropdown-toggle"
+                              href="#"
+                              id={`navbarDropdown_${header.key}`}
+                              role="button"
+                              data-bs-toggle="dropdown"
+                              aria-haspopup="true"
+                              aria-expanded="false">
+                              {header.title}
+                            </a>
+                            <div
+                              className="dropdown-menu"
+                              aria-labelledby={`navbarDropdown_${header.key}`}>
+                              {header.dropdown.map((item) => {
+                                return (
+                                  <Link
+                                    key={item.key}
+                                    className="dropdown-item"
+                                    to={item.path}>
+                                    {item.title}
+                                  </Link>
+                                );
+                              })}
+                            </div>
+                          </li>
+                        </div>
                       );
                     }
                   })}
