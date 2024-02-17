@@ -42,8 +42,8 @@ export const Header = () => {
                     </div> */}
 
                     <div className="col-9 d-flex align-items-center justify-content-end">
-                      <div className="d-flex justify-content-center align-items-center">
-                        <div className="aa-search-box">
+                      <div className="d-flex justify-content-center align-items-center w-100">
+                        <div className="aa-search-box ms-5">
                           <form action="">
                             <input
                               type="text"
