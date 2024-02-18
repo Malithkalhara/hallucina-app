@@ -2,8 +2,15 @@ import { faCartShopping, faUser } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Button, Popover } from "antd";
 
 export const Header = () => {
+  const [open, setOpen] = useState(false);
+
+  const handleOpenChange = (value) => {
+    setOpen(value);
+  };
   return (
     <div>
       <header id="aa-header">
@@ -21,7 +28,8 @@ export const Header = () => {
                             alt="logo img"
                             style={{
                               width: "100px",
-                            }}></img>
+                            }}
+                          ></img>
                         </Link>
                       </div>
                     </div>
@@ -56,14 +64,94 @@ export const Header = () => {
                             </button>
                           </form>
                         </div>
-                        <div className="aa-cartbox d-flex justify-content-center">
-                          <a className="aa-cart-link" href="#">
-                            {/* <div className="aa-browse-btn fa-xs"> */}
-                            <FontAwesomeIcon icon={faCartShopping} size="lg" />
-                            {/* </div> */}
-                            {/* <span className="aa-cart-title">SHOPPING CART</span> */}
-                            <span className="aa-cart-notify">5</span>
-                          </a>
+
+                        <div
+                          className="aa-cartbox d-flex justify-content-center"
+                          onClick={() => handleOpenChange(true)}
+                        >
+                          <Popover
+                            content={
+                              <>
+                                <div className="aa-cartbox">
+                                  <div className="aa-cartbox-summary">
+                                    <ul>
+                                      <li>
+                                        <a className="aa-cartbox-img" href="#">
+                                          <img
+                                            src="img/woman-small-2.jpg"
+                                            alt="img"
+                                          ></img>
+                                        </a>
+                                        <div className="aa-cartbox-info">
+                                          <h4>
+                                            <a href="#">Product Name</a>
+                                          </h4>
+                                          <p>1 x $250</p>
+                                        </div>
+                                        <a
+                                          className="aa-remove-product"
+                                          href="#"
+                                        >
+                                          <span className="fa fa-times"></span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <a className="aa-cartbox-img" href="#">
+                                          <img
+                                            src="img/woman-small-1.jpg"
+                                            alt="img"
+                                          ></img>
+                                        </a>
+                                        <div className="aa-cartbox-info">
+                                          <h4>
+                                            <a href="#">Product Name</a>
+                                          </h4>
+                                          <p>1 x $250</p>
+                                        </div>
+                                        <a
+                                          className="aa-remove-product"
+                                          href="#"
+                                        >
+                                          <span className="fa fa-times"></span>
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <span className="aa-cartbox-total-title">
+                                          {" "}
+                                          Total{" "}
+                                        </span>
+                                        <span className="aa-cartbox-total-price">
+                                          {" "}
+                                          $500{" "}
+                                        </span>
+                                      </li>
+                                    </ul>
+                                    <a
+                                      className="aa-cartbox-checkout aa-primary-btn"
+                                      href="checkout.html"
+                                    >
+                                      Checkout
+                                    </a>
+                                  </div>
+                                </div>
+                              </>
+                            }
+                            title="Cart"
+                            trigger="click"
+                            open={open}
+                            onOpenChange={handleOpenChange}
+                          >
+                            <div className="aa-cart-link">
+                              {/* <div className="aa-browse-btn fa-xs"> */}
+                              <FontAwesomeIcon
+                                icon={faCartShopping}
+                                size="lg"
+                              />
+                              {/* </div> */}
+                              {/* <span className="aa-cart-title">SHOPPING CART</span> */}
+                              <span className="aa-cart-notify">5</span>
+                            </div>
+                          </Popover>
 
                           <div className="aa-cartbox-summary">
                             <ul>
@@ -71,7 +159,8 @@ export const Header = () => {
                                 <a className="aa-cartbox-img" href="#">
                                   <img
                                     src="img/woman-small-2.jpg"
-                                    alt="img"></img>
+                                    alt="img"
+                                  ></img>
                                 </a>
                                 <div className="aa-cartbox-info">
                                   <h4>
@@ -87,7 +176,8 @@ export const Header = () => {
                                 <a className="aa-cartbox-img" href="#">
                                   <img
                                     src="img/woman-small-1.jpg"
-                                    alt="img"></img>
+                                    alt="img"
+                                  ></img>
                                 </a>
                                 <div className="aa-cartbox-info">
                                   <h4>
@@ -112,14 +202,16 @@ export const Header = () => {
                             </ul>
                             <a
                               className="aa-cartbox-checkout aa-primary-btn"
-                              href="checkout.html">
+                              href="checkout.html"
+                            >
                               Checkout
                             </a>
                           </div>
                         </div>
                         <div
                           className="aa-cartbox d-flex justify-content-center "
-                          style={{ paddingLeft: "15px" }}>
+                          style={{ paddingLeft: "15px" }}
+                        >
                           <a className="aa-cart-link" href="#">
                             {/* <div className="aa-browse-btn fa-xs"> */}
                             <FontAwesomeIcon icon={faUser} size="lg" />
