@@ -40,7 +40,7 @@ export const Products = () => {
                             <figure>
                               <a className="aa-product-img" href="#">
                                 <img
-                                  src="img/man/polo-shirt-2.png"
+                                  src="img/man/polo-shirt-2.jpg"
                                   alt="polo shirt img"
                                 />
                               </a>
@@ -149,7 +149,7 @@ export const Products = () => {
                             <figure>
                               <a className="aa-product-img" href="#">
                                 <img
-                                  src="img/man/polo-shirt-1.png"
+                                  src="img/man/polo-shirt-1.jpg"
                                   alt="polo shirt img"
                                 />
                               </a>
@@ -201,7 +201,7 @@ export const Products = () => {
                             <figure>
                               <a className="aa-product-img" href="#">
                                 <img
-                                  src="img/man/polo-shirt-4.png"
+                                  src="img/man/polo-shirt-4.jpg"
                                   alt="polo shirt img"
                                 />
                               </a>
@@ -257,7 +257,7 @@ export const Products = () => {
                             <figure>
                               <a className="aa-product-img" href="#">
                                 <img
-                                  src="img/man/polo-shirt-5.png"
+                                  src="img/man/polo-shirt-5.jpg"
                                   alt="polo shirt img"
                                 />
                               </a>
@@ -306,7 +306,7 @@ export const Products = () => {
                             <figure>
                               <a className="aa-product-img" href="#">
                                 <img
-                                  src="img/man/polo-shirt-6.png"
+                                  src="img/man/polo-shirt-6.jpg"
                                   alt="polo shirt img"
                                 />
                               </a>
@@ -358,7 +358,7 @@ export const Products = () => {
                             <figure>
                               <a className="aa-product-img" href="#">
                                 <img
-                                  src="img/man/polo-shirt-2.png"
+                                  src="img/man/polo-shirt-2.jpg"
                                   alt="polo shirt img"
                                 />
                               </a>

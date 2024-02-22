@@ -189,10 +189,22 @@ export const Slider = () => {
             data-bs-slide-to="2"
             aria-label="Slide 3"
           ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="3"
+            aria-label="Slide 4"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="4"
+            aria-label="Slide 5"
+          ></button>
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active" data-bs-interval="10000">
-            <img src="img/slider/5.jpg" className="d-block w-100" alt="..."></img>
+            <img src="img/banner/banner_img (1).jpg" className="d-block w-100" alt="..."></img>
             <div className="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>
@@ -201,7 +213,7 @@ export const Slider = () => {
             </div>
           </div>
           <div className="carousel-item" data-bs-interval="2000">
-            <img src="img/slider/5.jpg" className="d-block w-100" alt="..."></img>
+            <img src="img/banner/banner_img (2).jpg" className="d-block w-100" alt="..."></img>
             <div className="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>
@@ -210,7 +222,25 @@ export const Slider = () => {
             </div>
           </div>
           <div className="carousel-item">
-            <img src="img/slider/5.jpg" className="d-block w-100" alt="..."></img>
+            <img src="img/banner/banner_img (3).jpg" className="d-block w-100" alt="..."></img>
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img src="img/banner/banner_img (4).jpg" className="d-block w-100" alt="..."></img>
+            <div className="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
+          <div className="carousel-item">
+            <img src="img/banner/banner_img (5).jpg" className="d-block w-100" alt="..."></img>
             <div className="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>
