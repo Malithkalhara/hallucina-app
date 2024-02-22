@@ -1,24 +1,10 @@
 import React from "react";
+import { BreadCrums } from "../../components/BreadCrums/BreadCrums";
 
 const Account = () => {
   return (
     <div>
-      <section id="aa-catg-head-banner">
-        <img src="img/fashion/fashion-header-bg-8.jpg" alt="fashion img"></img>
-        <div class="aa-catg-head-banner-area">
-          <div class="container">
-            <div class="aa-catg-head-banner-content">
-              <h2>Account Page</h2>
-              <ol class="breadcrumb">
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li class="active">Account</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BreadCrums page="Account" />
 
       <section id="aa-myaccount">
         <div class="container">

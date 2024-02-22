@@ -1,24 +1,93 @@
 import React from "react";
+import { Collapse, Input } from "antd";
+import { LabeledInput } from "../../components/LabeledInput/LabeledInput";
+import { LabeledSelect } from "../../components/LabeledSelect/LabeledSelect";
+import { counties } from "../../utils/SelectOptions";
+import { BreadCrums } from "../../components/BreadCrums/BreadCrums";
 
 const Checkout = () => {
-  return (
-    <div>
-      <section id="aa-catg-head-banner">
-        <img src="img/fashion/fashion-header-bg-8.jpg" alt="fashion img"></img>
-        <div className="aa-catg-head-banner-area">
-          <div className="container">
-            <div className="aa-catg-head-banner-content">
-              <h2>Checkout Page</h2>
-              <ol className="breadcrumb">
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li className="active">Checkout</li>
-              </ol>
+  const items = [
+    {
+      key: 1,
+      label: "Shipping Details",
+      children: (
+        <>
+          <div className="row ">
+            <div className="col-md-6 d-flex flex-column justify-content-start">
+              <LabeledInput label="First Name" />
+              <LabeledInput label="Company Name" />
+              <LabeledInput label="Email" />
+            </div>
+            <div className="col-md-6">
+              <LabeledInput label="Last Name" />
+              <LabeledInput label="Phone" />
+            </div>
+            <div className="col-md-6">
+              <LabeledInput label="Appartment, Suite etc." />
+              <LabeledInput label="City / Town" />
+              <LabeledInput label="District" />
+            </div>
+            <div className="col-md-6">
+              <LabeledInput label="Postcode / ZIP" />
+              <LabeledSelect label="Country" options={counties} />
+            </div>
+            <div className=" ml-2">
+              <textarea
+                className="w-100"
+                cols="8"
+                rows="3"
+                placeholder="Special Notes"
+              ></textarea>
             </div>
           </div>
-        </div>
-      </section>
+        </>
+      ),
+    },
+    {
+      key: 2,
+      label: "Billing Details",
+      children: (
+        <>
+          <div className="row ">
+            <div className="col-md-6 d-flex flex-column justify-content-start">
+              <LabeledInput label="First Name" />
+              <LabeledInput label="Company Name" />
+              <LabeledInput label="Email" />
+            </div>
+            <div className="col-md-6">
+              <LabeledInput label="Last Name" />
+              <LabeledInput label="Phone" />
+            </div>
+            <div className="col-md-6">
+              <LabeledInput label="Appartment, Suite etc." />
+              <LabeledInput label="City / Town" />
+              <LabeledInput label="District" />
+            </div>
+            <div className="col-md-6">
+              <LabeledInput label="Postcode / ZIP" />
+              <LabeledSelect label="Country" options={counties} />
+            </div>
+            <div className=" ml-2">
+              <textarea
+                className="w-100"
+                cols="8"
+                rows="3"
+                placeholder="Special Notes"
+              ></textarea>
+            </div>
+          </div>
+        </>
+      ),
+    },
+  ];
+
+  const onChange = (key) => {
+    console.log(key);
+  };
+
+  return (
+    <div>
+      <BreadCrums page="Checkout" />
 
       <section id="checkout">
         <div className="container">
@@ -27,7 +96,7 @@ const Checkout = () => {
               <div className="checkout-area">
                 <form action="">
                   <div className="row">
-                    <div className="col-md-8">
+                    {/* <div className="col-md-8">
                       <div className="checkout-left">
                         <div className="panel-group" id="accordion">
                           <div className="panel panel-default aa-checkout-coupon">
@@ -397,6 +466,13 @@ const Checkout = () => {
                           </div>
                         </div>
                       </div>
+                    </div> */}
+                    <div className="col-md-8">
+                      <Collapse
+                        items={items}
+                        defaultActiveKey={["1"]}
+                        onChange={onChange}
+                      />
                     </div>
                     <div className="col-md-4">
                       <div className="checkout-right">

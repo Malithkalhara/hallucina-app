@@ -1,24 +1,11 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import { BreadCrums } from "../../components/BreadCrums/BreadCrums";
 
 const Cart = () => {
   return (
     <div>
-      <section id="aa-catg-head-banner">
-        <img src="img/fashion/fashion-header-bg-8.jpg" alt="fashion img"></img>
-        <div className="aa-catg-head-banner-area">
-          <div className="container">
-            <div className="aa-catg-head-banner-content">
-              <h2>Cart Page</h2>
-              <ol className="breadcrumb">
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li className="active">Cart</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BreadCrums page="Cart" />
 
       <section id="cart-view">
         <div className="container">
@@ -167,9 +154,9 @@ const Cart = () => {
                         </tr>
                       </tbody>
                     </table>
-                    <a href="#" className="aa-cart-view-btn">
+                    <Link to="/checkout" className="aa-cart-view-btn">
                       Proced to Checkout
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>

@@ -57,13 +57,13 @@ export const Header = () => {
                           </form>
                         </div>
                         <div className="aa-cartbox d-flex justify-content-center">
-                          <a className="aa-cart-link" href="#">
+                          <Link className="aa-cart-link" to="/cart">
                             {/* <div className="aa-browse-btn fa-xs"> */}
                             <FontAwesomeIcon icon={faCartShopping} size="lg" />
                             {/* </div> */}
                             {/* <span className="aa-cart-title">SHOPPING CART</span> */}
                             <span className="aa-cart-notify">5</span>
-                          </a>
+                          </Link>
 
                           <div className="aa-cartbox-summary">
                             <ul>

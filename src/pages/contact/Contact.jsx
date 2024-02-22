@@ -1,24 +1,10 @@
 import React from "react";
+import { BreadCrums } from "../../components/BreadCrums/BreadCrums";
 
 const Contact = () => {
   return (
     <div>
-      <section id="aa-catg-head-banner">
-        <img src="img/fashion/fashion-header-bg-8.jpg" alt="fashion img"></img>
-        <div className="aa-catg-head-banner-area">
-          <div className="container">
-            <div className="aa-catg-head-banner-content">
-              <h2>Contact</h2>
-              <ol className="breadcrumb">
-                <li>
-                  <a href="index.html">Home</a>
-                </li>
-                <li className="active">Contact</li>
-              </ol>
-            </div>
-          </div>
-        </div>
-      </section>
+      <BreadCrums page="Contact" />
 
       <section id="aa-contact">
         <div className="container">
@@ -39,7 +25,7 @@ const Contact = () => {
                     width="100%"
                     height="450"
                     frameborder="0"
-                    style={{border:0}}
+                    style={{ border: 0 }}
                     allowfullscreen
                   ></iframe>
                 </div>
@@ -133,6 +119,5 @@ const Contact = () => {
     </div>
   );
 };
-
 
 export default Contact;
