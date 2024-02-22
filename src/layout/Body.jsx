@@ -53,9 +53,9 @@ export const Body = () => {
     <div className="vh-100">
       {/* <RouterProvider router={router} /> */}
       <Routes>
-        {router.map((item) => {
+        {router.map((item,index) => {
           return (
-            <Route path={item.path} element={item.element}></Route>
+            <Route key={index} path={item.path} element={item.element}></Route>
           )
         })}
       </Routes>
