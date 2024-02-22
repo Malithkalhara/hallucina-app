@@ -181,7 +181,7 @@ export const Menu = () => {
                   {navHeaders.map((header) => {
                     if (header.dropdown === null) {
                       return (
-                        <div style={{ padding: "0px 10px" }}>
+                        <div style={{ padding: "0px 10px" }} className="">
                           <Link
                             key={header.key}
                             className={
@@ -197,7 +197,7 @@ export const Menu = () => {
                       );
                     } else {
                       return (
-                        <div style={{ padding: "0px 10px" }}>
+                        <div style={{ padding: "0px 10px" }} className="">
                           <li key={header.key} className="nav-item dropdown">
                             <a
                               className="nav-link dropdown-toggle"
