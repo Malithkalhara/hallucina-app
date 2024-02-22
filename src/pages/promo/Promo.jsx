@@ -12,7 +12,7 @@ export const Promo = () => {
                   <div className="col-md-5 no-padding">
                     <div className="aa-promo-left">
                       <div className="aa-promo-banner">
-                        <img src="img/promo-banner-1.jpg" alt="img" />
+                        <img src="img/promo-banner-11.jpg" alt="img" />
                         <div className="aa-prom-content">
                           <span>75% Off</span>
                           <h4>
@@ -27,7 +27,7 @@ export const Promo = () => {
                     <div className="aa-promo-right">
                       <div className="aa-single-promo-right">
                         <div className="aa-promo-banner">
-                          <img src="img/promo-banner-3.jpg" alt="img" />
+                          <img src="img/promo-banner-22.jpg" alt="img" />
                           <div className="aa-prom-content">
                             <span>Exclusive Item</span>
                             <h4>
@@ -38,33 +38,33 @@ export const Promo = () => {
                       </div>
                       <div className="aa-single-promo-right">
                         <div className="aa-promo-banner">
-                          <img src="img/promo-banner-2.jpg" alt="img" />
+                          <img src="img/promo-banner-22.jpg" alt="img" />
                           <div className="aa-prom-content">
                             <span>Sale Off</span>
                             <h4>
-                              <a href="#">On Shoes</a>
+                              <a href="#">On Shirt</a>
                             </h4>
                           </div>
                         </div>
                       </div>
                       <div className="aa-single-promo-right">
                         <div className="aa-promo-banner">
-                          <img src="img/promo-banner-4.jpg" alt="img" />
+                          <img src="img/promo-banner-22.jpg" alt="img" />
                           <div className="aa-prom-content">
                             <span>New Arrivals</span>
                             <h4>
-                              <a href="#">For Kids</a>
+                              <a href="#">For Men</a>
                             </h4>
                           </div>
                         </div>
                       </div>
                       <div className="aa-single-promo-right">
                         <div className="aa-promo-banner">
-                          <img src="img/promo-banner-5.jpg" alt="img" />
+                          <img src="img/promo-banner-55.jpg" alt="img" />
                           <div className="aa-prom-content">
                             <span>25% Off</span>
                             <h4>
-                              <a href="#">For Bags</a>
+                              <a href="#">For Women</a>
                             </h4>
                           </div>
                         </div>
