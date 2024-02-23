@@ -34,7 +34,7 @@ export const Popular = () => {
                           <figure>
                             <a className="aa-product-img" href="#">
                               <img
-                                src="img/man/polo-shirt-2.png"
+                                src="img/man/polo-shirt-2.jpg"
                                 alt="polo shirt img"
                               />
                             </a>
@@ -90,7 +90,7 @@ export const Popular = () => {
                           <figure>
                             <a className="aa-product-img" href="#">
                               <img
-                                src="img/women/girl-2.png"
+                                src="img/women/girl-2.jpg"
                                 alt="polo shirt img"
                               />
                             </a>
@@ -143,7 +143,7 @@ export const Popular = () => {
                           <figure>
                             <a className="aa-product-img" href="#">
                               <img
-                                src="img/man/t-shirt-1.png"
+                                src="img/man/t-shirt-1.jpg"
                                 alt="polo shirt img"
                               />
                             </a>
@@ -196,7 +196,7 @@ export const Popular = () => {
                           <figure>
                             <a className="aa-product-img" href="#">
                               <img
-                                src="img/women/girl-3.png"
+                                src="img/women/girl-3.jpg"
                                 alt="polo shirt img"
                               />
                             </a>
@@ -248,7 +248,7 @@ export const Popular = () => {
                           <figure>
                             <a className="aa-product-img" href="#">
                               <img
-                                src="img/man/polo-shirt-1.png"
+                                src="img/man/polo-shirt-1.jpg"
                                 alt="polo shirt img"
                               />
                             </a>
@@ -300,7 +300,7 @@ export const Popular = () => {
                           <figure>
                             <a className="aa-product-img" href="#">
                               <img
-                                src="img/women/girl-4.png"
+                                src="img/women/girl-4.jpg"
                                 alt="polo shirt img"
                               />
                             </a>
@@ -356,7 +356,7 @@ export const Popular = () => {
                           <figure>
                             <a className="aa-product-img" href="#">
                               <img
-                                src="img/man/polo-shirt-4.png"
+                                src="img/man/polo-shirt-4.jpg"
                                 alt="polo shirt img"
                               />
                             </a>
@@ -412,7 +412,7 @@ export const Popular = () => {
                           <figure>
                             <a className="aa-product-img" href="#">
                               <img
-                                src="img/women/girl-1.png"
+                                src="img/women/girl-1.jpg"
                                 alt="polo shirt img"
                               />
                             </a>
@@ -476,7 +476,7 @@ export const Popular = () => {
                           <figure>
                             <a className="aa-product-img" href="#">
                               <img
-                                src="img/man/polo-shirt-2.png"
+                                src="img/man/polo-shirt-2.jpg"
                                 alt="polo shirt img"
                               />
                             </a>
@@ -532,7 +532,7 @@ export const Popular = () => {
                           <figure>
                             <a className="aa-product-img" href="#">
                               <img
-                                src="img/women/girl-2.png"
+                                src="img/women/girl-2.jpg"
                                 alt="polo shirt img"
                               />
                             </a>
@@ -585,7 +585,7 @@ export const Popular = () => {
                           <figure>
                             <a className="aa-product-img" href="#">
                               <img
-                                src="img/man/t-shirt-1.png"
+                                src="img/man/t-shirt-1.jpg"
                                 alt="polo shirt img"
                               />
                             </a>
