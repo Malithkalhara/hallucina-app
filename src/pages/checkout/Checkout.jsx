@@ -1,9 +1,10 @@
 import React from "react";
-import { Collapse, Input } from "antd";
+import { Collapse, Input, Space } from "antd";
 import { LabeledInput } from "../../components/LabeledInput/LabeledInput";
 import { LabeledSelect } from "../../components/LabeledSelect/LabeledSelect";
 import { counties } from "../../utils/SelectOptions";
 import { BreadCrums } from "../../components/BreadCrums/BreadCrums";
+import CheckOutLayer from "./formLayout";
 
 const Checkout = () => {
   const items = [
@@ -12,9 +13,10 @@ const Checkout = () => {
       label: "Shipping Details",
       children: (
         <>
-          <div className="row ">
+         <CheckOutLayer />
+          {/* <div className="row ">
             <div className="col-md-6 d-flex flex-column justify-content-start">
-              <LabeledInput label="First Name" />
+            
               <LabeledInput label="Company Name" />
               <LabeledInput label="Email" />
             </div>
@@ -39,7 +41,7 @@ const Checkout = () => {
                 placeholder="Special Notes"
               ></textarea>
             </div>
-          </div>
+          </div> */}
         </>
       ),
     },
@@ -48,7 +50,9 @@ const Checkout = () => {
       label: "Billing Details",
       children: (
         <>
-          <div className="row ">
+        <CheckOutLayer />
+
+          {/* <div className="row ">
             <div className="col-md-6 d-flex flex-column justify-content-start">
               <LabeledInput label="First Name" />
               <LabeledInput label="Company Name" />
@@ -75,7 +79,7 @@ const Checkout = () => {
                 placeholder="Special Notes"
               ></textarea>
             </div>
-          </div>
+          </div> */}
         </>
       ),
     },
