@@ -14,13 +14,18 @@ export const Header = () => {
                 <div className="aa-header-bottom-area">
                   <div className="row w-100">
                     <div className="col-3">
-                      <div className="aa-logo">
+                      <div
+                        className="aa-logo"
+                        style={{
+                          padding: "10px",
+                        }}>
                         <Link to="/">
                           <img
-                            src="img/Picture1.jpg"
+                            src="img/Picture1.png"
                             alt="logo img"
                             style={{
                               width: "100px",
+                              marging: "30px",
                             }}></img>
                         </Link>
                       </div>

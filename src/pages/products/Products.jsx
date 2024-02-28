@@ -23,12 +23,12 @@ export const Products = () => {
                       </li>
                       <li>
                         <a href="#sports" data-toggle="tab">
-                          Sports
+                          Accessories
                         </a>
                       </li>
                       <li>
                         <a href="#electronics" data-toggle="tab">
-                          Electronics
+                          Jewelery
                         </a>
                       </li>
                     </ul>
@@ -45,8 +45,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -63,16 +63,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -81,8 +79,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -101,8 +98,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -116,16 +113,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -134,8 +129,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -154,8 +148,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -172,16 +166,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -190,8 +182,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -206,8 +197,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -224,16 +215,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -242,8 +231,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -262,8 +250,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -277,16 +265,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -295,8 +281,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -311,8 +296,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -329,16 +314,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -347,8 +330,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -363,8 +345,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -381,16 +363,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -399,8 +379,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -419,8 +398,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -434,16 +413,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -452,8 +429,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -480,8 +456,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -498,16 +474,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -516,8 +490,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -536,8 +509,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -551,16 +524,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -569,8 +540,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -589,8 +559,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -607,16 +577,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -625,8 +593,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -641,8 +608,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -659,16 +626,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -677,8 +642,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -697,8 +661,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -713,16 +677,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -731,8 +693,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -747,8 +708,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -765,16 +726,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -783,8 +742,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -799,8 +757,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -817,16 +775,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -835,8 +791,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -855,8 +810,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -870,16 +825,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -888,8 +841,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -916,8 +868,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -934,16 +886,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -952,8 +902,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -972,8 +921,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -987,16 +936,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1005,8 +952,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1025,8 +971,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1043,16 +989,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1061,8 +1005,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1077,8 +1020,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1095,16 +1038,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1113,8 +1054,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1133,8 +1073,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1148,16 +1088,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1166,8 +1104,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1182,8 +1119,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1200,16 +1137,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1218,8 +1153,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1234,8 +1168,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1252,16 +1186,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1270,8 +1202,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1290,8 +1221,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1305,16 +1236,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1323,8 +1252,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1347,8 +1275,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1365,16 +1293,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1383,8 +1309,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1403,8 +1328,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1418,16 +1343,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1436,8 +1359,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1456,8 +1378,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1474,16 +1396,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1492,8 +1412,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1508,8 +1427,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1526,16 +1445,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1544,8 +1461,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1564,8 +1480,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1579,16 +1495,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1597,8 +1511,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1613,8 +1526,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1631,16 +1544,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1649,8 +1560,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1665,8 +1575,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1683,16 +1593,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1701,8 +1609,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1721,8 +1628,8 @@ export const Products = () => {
                                 />
                               </a>
                               <a className="aa-add-card-btn" href="#">
-                                <span className="fa fa-shopping-cart"></span>Add To
-                                Cart
+                                <span className="fa fa-shopping-cart"></span>Add
+                                To Cart
                               </a>
                               <figcaption>
                                 <h4 className="aa-product-title">
@@ -1736,16 +1643,14 @@ export const Products = () => {
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Add to Wishlist"
-                              >
+                                title="Add to Wishlist">
                                 <span className="fa fa-heart-o"></span>
                               </a>
                               <a
                                 href="#"
                                 data-toggle="tooltip"
                                 data-placement="top"
-                                title="Compare"
-                              >
+                                title="Compare">
                                 <span className="fa fa-exchange"></span>
                               </a>
                               <a
@@ -1754,8 +1659,7 @@ export const Products = () => {
                                 data-placement="top"
                                 title="Quick View"
                                 data-toggle="modal"
-                                data-target="#quick-view-modal"
-                              >
+                                data-target="#quick-view-modal">
                                 <span className="fa fa-search"></span>
                               </a>
                             </div>
@@ -1778,8 +1682,7 @@ export const Products = () => {
                       tabindex="-1"
                       role="dialog"
                       aria-labelledby="myModalLabel"
-                      aria-hidden="true"
-                    >
+                      aria-hidden="true">
                       <div className="modal-dialog">
                         <div className="modal-content">
                           <div className="modal-body">
@@ -1787,8 +1690,7 @@ export const Products = () => {
                               type="button"
                               className="close"
                               data-dismiss="modal"
-                              aria-hidden="true"
-                            >
+                              aria-hidden="true">
                               &times;
                             </button>
                             <div className="row">
@@ -1796,14 +1698,12 @@ export const Products = () => {
                                 <div className="aa-product-view-slider">
                                   <div
                                     className="simpleLens-gallery-container"
-                                    id="demo-1"
-                                  >
+                                    id="demo-1">
                                     <div className="simpleLens-container">
                                       <div className="simpleLens-big-image-container">
                                         <a
                                           className="simpleLens-lens-image"
-                                          data-lens-image="img/view-slider/large/polo-shirt-1.png"
-                                        >
+                                          data-lens-image="img/view-slider/large/polo-shirt-1.png">
                                           <img
                                             src="img/view-slider/medium/polo-shirt-1.png"
                                             className="simpleLens-big-image"
@@ -1816,16 +1716,14 @@ export const Products = () => {
                                         href="#"
                                         className="simpleLens-thumbnail-wrapper"
                                         data-lens-image="img/view-slider/large/polo-shirt-1.png"
-                                        data-big-image="img/view-slider/medium/polo-shirt-1.png"
-                                      >
+                                        data-big-image="img/view-slider/medium/polo-shirt-1.png">
                                         <img src="img/view-slider/thumbnail/polo-shirt-1.png" />
                                       </a>
                                       <a
                                         href="#"
                                         className="simpleLens-thumbnail-wrapper"
                                         data-lens-image="img/view-slider/large/polo-shirt-3.png"
-                                        data-big-image="img/view-slider/medium/polo-shirt-3.png"
-                                      >
+                                        data-big-image="img/view-slider/medium/polo-shirt-3.png">
                                         <img src="img/view-slider/thumbnail/polo-shirt-3.png" />
                                       </a>
 
@@ -1833,8 +1731,7 @@ export const Products = () => {
                                         href="#"
                                         className="simpleLens-thumbnail-wrapper"
                                         data-lens-image="img/view-slider/large/polo-shirt-4.png"
-                                        data-big-image="img/view-slider/medium/polo-shirt-4.png"
-                                      >
+                                        data-big-image="img/view-slider/medium/polo-shirt-4.png">
                                         <img src="img/view-slider/thumbnail/polo-shirt-4.png" />
                                       </a>
                                     </div>
