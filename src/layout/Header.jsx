@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link } from "react-router-dom";
 
+import logo from "../assets/img/Picture1.png";
+
 export const Header = () => {
   return (
     <div>
@@ -21,7 +23,7 @@ export const Header = () => {
                         }}>
                         <Link to="/">
                           <img
-                            src="img/Picture1.png"
+                            src={logo}
                             alt="logo img"
                             style={{
                               width: "100px",

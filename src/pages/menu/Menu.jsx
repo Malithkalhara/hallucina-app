@@ -47,14 +47,14 @@ export const Menu = () => {
           path: "/",
         },
         {
-          key: 1,
+          key: 2,
           title: "Tops",
-          path: "/",
+          path: "/collections/mens-tops",
         },
         {
-          key: 1,
+          key: 3,
           title: "Pants",
-          path: "/",
+          path: "/collections/mens-pants",
         },
       ],
       path: "/",

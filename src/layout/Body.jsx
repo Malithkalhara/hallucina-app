@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Account from "../pages/account/Account";
 import Cart from "../pages/cart/Cart";
 import Checkout from "../pages/checkout/Checkout";
+import Collections from "../pages/collections";
 import Contact from "../pages/contact/Contact";
 import ErrorPage from "../pages/error/ErrorPage";
 import Home from "../pages/home/Home";
@@ -43,6 +44,10 @@ export const Body = () => {
     {
       path: "/product",
       element: <Product />,
+    },
+    {
+      path: "/collections/*",
+      element: <Collections />,
     },
     {
       path: "/*",
