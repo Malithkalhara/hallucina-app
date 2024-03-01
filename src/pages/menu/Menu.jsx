@@ -12,27 +12,27 @@ export const Menu = () => {
         {
           key: 1,
           title: "Costume Sets",
-          path: "/",
+          path: "/collections/womens-costume-sets",
         },
         {
           key: 2,
           title: "Dresses",
-          path: "/",
+          path: "/collections/womens-dresses",
         },
         {
           key: 3,
           title: "Skirts",
-          path: "/",
+          path: "/collections/womens-skirts",
         },
         {
           key: 4,
           title: "Tops",
-          path: "/",
+          path: "/collections/womens-tops",
         },
         {
           key: 5,
           title: "Pants",
-          path: "/",
+          path: "/collections/womens-pants",
         },
       ],
       path: "/",
@@ -44,7 +44,7 @@ export const Menu = () => {
         {
           key: 1,
           title: "Costume Sets",
-          path: "/",
+          path: "/collections/mens-costume-sets",
         },
         {
           key: 2,
@@ -66,27 +66,27 @@ export const Menu = () => {
         {
           key: 1,
           title: "Pocket Belts and Bags",
-          path: "/",
+          path: "/collections/accessories-pocket-belts-and-bags",
         },
         {
           key: 2,
           title: "Accessories",
-          path: "/",
+          path: "/collections/accessories-accessories",
         },
         {
           key: 3,
           title: "Cuffs",
-          path: "/",
+          path: "/collections/accessories-cuffs",
         },
         {
           key: 4,
           title: "Holsters",
-          path: "/",
+          path: "/collections/accessories-holsters",
         },
         {
           key: 5,
           title: "Footwear",
-          path: "/",
+          path: "/collections/accessories-footwear",
         },
       ],
       path: "/",
@@ -98,22 +98,22 @@ export const Menu = () => {
         {
           key: 1,
           title: "Hair",
-          path: "/",
+          path: "/collections/jeweleries-hair",
         },
         {
           key: 2,
           title: "Neck",
-          path: "/",
+          path: "/collections/jeweleries-neck",
         },
         {
           key: 3,
           title: "Body Jewelery",
-          path: "/",
+          path: "/collections/jeweleries-body-jewelery",
         },
         {
           key: 4,
           title: "Piercings",
-          path: "/",
+          path: "/collections/jeweleries-piercings",
         },
       ],
       path: "/",
