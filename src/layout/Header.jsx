@@ -20,8 +20,7 @@ export const Header = () => {
                         className="aa-logo"
                         style={{
                           padding: "10px",
-                        }}
-                      >
+                        }}>
                         <Link to="/">
                           <img
                             src={logo}
@@ -29,8 +28,7 @@ export const Header = () => {
                             style={{
                               width: "100px",
                               marging: "30px",
-                            }}
-                          ></img>
+                            }}></img>
                         </Link>
                       </div>
                     </div>
@@ -66,8 +64,7 @@ export const Header = () => {
                                 <a className="aa-cartbox-img" href="#">
                                   <img
                                     src="img/woman-small-2.jpg"
-                                    alt="img"
-                                  ></img>
+                                    alt="img"></img>
                                 </a>
                                 <div className="aa-cartbox-info">
                                   <h4>
@@ -83,8 +80,7 @@ export const Header = () => {
                                 <a className="aa-cartbox-img" href="#">
                                   <img
                                     src="img/woman-small-1.jpg"
-                                    alt="img"
-                                  ></img>
+                                    alt="img"></img>
                                 </a>
                                 <div className="aa-cartbox-info">
                                   <h4>
@@ -109,21 +105,19 @@ export const Header = () => {
                             </ul>
                             <a
                               className="aa-cartbox-checkout aa-primary-btn"
-                              href="checkout.html"
-                            >
+                              href="checkout.html">
                               Checkout
                             </a>
                           </div>
                         </div>
                         <div
                           className="aa-cartbox d-flex justify-content-center "
-                          style={{ paddingLeft: "5px" }}
-                        >
-                          <a className="aa-cart-link" href="#">
+                          style={{ paddingLeft: "5px" }}>
+                          <Link className="aa-cart-link" to="/account">
                             {/* <div className="aa-browse-btn fa-xs"> */}
                             <FontAwesomeIcon icon={faUser} size="lg" />
                             {/* </div> */}
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
