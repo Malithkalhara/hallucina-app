@@ -1,11 +1,14 @@
 import React from "react";
-import fashionHeader from "../../assets/img/fashion/fashion-header-bg-8.jpg";
+import poloShirtMan from "../../assets/img/man/polo-shirt-1.png";
+import womenSmall from "../../assets/img/woman-small-1.jpg";
+import { BreadCrums } from "../../components/BreadCrums/BreadCrums";
+
 
 export const Product = ({ title }) => {
   return (
     <div>
+      <BreadCrums page="Product" />
       <section id="aa-catg-head-banner">
-        <img src={fashionHeader} alt="fashion img"></img>
         <div class="aa-catg-head-banner-area">
           <div class="container">
             <div class="aa-catg-head-banner-content">
@@ -14,7 +17,7 @@ export const Product = ({ title }) => {
                 <li>
                   <a href="index.html">Home</a>
                 </li>
-                <li class="active">Women</li>
+                <li class="active">page</li>
               </ol>
             </div>
           </div>
@@ -65,7 +68,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/man/polo-shirt-5.jpg"
+                            src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -122,7 +125,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/man/polo-shirt-6.jpg"
+                            src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -176,7 +179,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/man/polo-shirt-5.jpg"
+                           src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -229,7 +232,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/women/girl-4.png"
+                           src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -286,7 +289,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/women/girl-5.png"
+                            src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -336,7 +339,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/women/girl-6.png"
+                           src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -389,7 +392,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/women/girl-7.png"
+                            src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -446,7 +449,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/women/girl-1.png"
+                            src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -500,7 +503,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/women/girl-1.png"
+                            src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -557,7 +560,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/women/girl-2.png"
+                           src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -611,7 +614,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/women/girl-3.png"
+                           src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -664,7 +667,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/women/girl-4.png"
+                            src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -721,7 +724,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/women/girl-5.png"
+                           src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -772,7 +775,7 @@ export const Product = ({ title }) => {
                       <figure>
                         <a class="aa-product-img" href="#">
                           <img
-                            src="img/women/girl-6.png"
+                           src={poloShirtMan}
                             alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
@@ -1056,7 +1059,7 @@ export const Product = ({ title }) => {
                     <ul>
                       <li>
                         <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src="img/woman-small-2.jpg"></img>
+                          <img alt="img" src={womenSmall}></img>
                         </a>
                         <div class="aa-cartbox-info">
                           <h4>
@@ -1067,7 +1070,7 @@ export const Product = ({ title }) => {
                       </li>
                       <li>
                         <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src="img/woman-small-1.jpg"></img>
+                          <img alt="img" src={womenSmall}></img>
                         </a>
                         <div class="aa-cartbox-info">
                           <h4>
@@ -1078,7 +1081,7 @@ export const Product = ({ title }) => {
                       </li>
                       <li>
                         <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src="img/woman-small-2.jpg"></img>
+                          <img alt="img" src={womenSmall}></img>
                         </a>
                         <div class="aa-cartbox-info">
                           <h4>
@@ -1097,7 +1100,7 @@ export const Product = ({ title }) => {
                     <ul>
                       <li>
                         <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src="img/woman-small-2.jpg"></img>
+                          <img alt="img" src={womenSmall}></img>
                         </a>
                         <div class="aa-cartbox-info">
                           <h4>
@@ -1108,7 +1111,7 @@ export const Product = ({ title }) => {
                       </li>
                       <li>
                         <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src="img/woman-small-1.jpg"></img>
+                          <img alt="img" src={womenSmall}></img>
                         </a>
                         <div class="aa-cartbox-info">
                           <h4>
@@ -1119,7 +1122,7 @@ export const Product = ({ title }) => {
                       </li>
                       <li>
                         <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src="img/woman-small-2.jpg"></img>
+                          <img alt="img" src={womenSmall}></img>
                         </a>
                         <div class="aa-cartbox-info">
                           <h4>
