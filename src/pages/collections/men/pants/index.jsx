@@ -4,7 +4,7 @@ import { Product } from "../../../product/Product";
 const MensPants = () => {
   const { pathname } = useLocation();
 
-  return <Product />;
+  return <Product title="Pants" />;
 };
 
 export default MensPants;

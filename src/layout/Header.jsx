@@ -32,7 +32,7 @@ export const Header = () => {
                         </Link>
                       </div>
                     </div>
-                    {/* <div className="col-6 d-flex justify-content-center align-items-center">
+                    <div className="col-lg-6 d-flex align-items-center search-box">
                       <div className="aa-search-box">
                         <form action="">
                           <input
@@ -46,23 +46,9 @@ export const Header = () => {
                           </button>
                         </form>
                       </div>
-                    </div> */}
-
-                    <div className="col-9 d-flex align-items-center justify-content-end">
-                      <div className="d-flex justify-content-center align-items-center">
-                        <div className="aa-search-box">
-                          <form action="">
-                            <input
-                              type="text"
-                              name=""
-                              id=""
-                              placeholder="Search here ex. 'man' "
-                            />
-                            <button className="" type="submit">
-                              <span className="fa fa-search"></span>
-                            </button>
-                          </form>
-                        </div>
+                    </div>
+                    <div className="col-9 col-lg-3 d-flex align-items-center justify-content-end">
+                      <div className="d-flex justify-content-center align-items-end">
                         <div className="aa-cartbox d-flex justify-content-center">
                           <Link className="aa-cart-link" to="/cart">
                             {/* <div className="aa-browse-btn fa-xs"> */}
@@ -126,12 +112,12 @@ export const Header = () => {
                         </div>
                         <div
                           className="aa-cartbox d-flex justify-content-center "
-                          style={{ paddingLeft: "15px" }}>
-                          <a className="aa-cart-link" href="#">
+                          style={{ paddingLeft: "5px" }}>
+                          <Link className="aa-cart-link" to="/account">
                             {/* <div className="aa-browse-btn fa-xs"> */}
                             <FontAwesomeIcon icon={faUser} size="lg" />
                             {/* </div> */}
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>
