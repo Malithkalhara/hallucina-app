@@ -7,55 +7,55 @@ const Account = () => {
       <BreadCrums page="Account" />
 
       <section id="aa-myaccount">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <div class="aa-myaccount-area">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="aa-myaccount-login">
-                      <h4>Login</h4>
-                      <form action="" class="aa-login-form">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-12">
+              <div className="aa-myaccount-area">
+                <div className="row">
+                  <div className="col-md-6">
+                    <div className="aa-myaccount-login">
+                      <div className="mb-40">
+                        <h4>Login</h4>
+                      </div>
+                      <form action="" className="aa-login-form">
                         <label for="">
                           Username or Email address<span>*</span>
                         </label>
                         <input
                           type="text"
-                          placeholder="Username or email"
-                        ></input>
+                          placeholder="Username or email"></input>
                         <label for="">
                           Password<span>*</span>
                         </label>
                         <input type="password" placeholder="Password"></input>
-                        <button type="submit" class="aa-browse-btn">
+                        <button type="submit" className="aa-browse-btn">
                           Login
                         </button>
-                        <label class="rememberme" for="rememberme">
+                        <label className="rememberme" for="rememberme">
                           <input type="checkbox" id="rememberme"></input>{" "}
                           Remember me{" "}
                         </label>
-                        <p class="aa-lost-password">
+                        <p className="aa-lost-password">
                           <a href="#">Lost your password?</a>
                         </p>
                       </form>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <div class="aa-myaccount-register">
+                  <div className="col-md-6">
+                    <div className="aa-myaccount-register">
                       <h4>Register</h4>
-                      <form action="" class="aa-login-form">
+                      <form action="" className="aa-login-form">
                         <label for="">
                           Username or Email address<span>*</span>
                         </label>
                         <input
                           type="text"
-                          placeholder="Username or email"
-                        ></input>
+                          placeholder="Username or email"></input>
                         <label for="">
                           Password<span>*</span>
                         </label>
                         <input type="password" placeholder="Password"></input>
-                        <button type="submit" class="aa-browse-btn">
+                        <button type="submit" className="aa-browse-btn">
                           Register
                         </button>
                       </form>

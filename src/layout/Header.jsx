@@ -127,11 +127,11 @@ export const Header = () => {
                         <div
                           className="aa-cartbox d-flex justify-content-center "
                           style={{ paddingLeft: "5px" }}>
-                          <a className="aa-cart-link" href="#">
+                          <Link className="aa-cart-link" to="/account">
                             {/* <div className="aa-browse-btn fa-xs"> */}
                             <FontAwesomeIcon icon={faUser} size="lg" />
                             {/* </div> */}
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </div>

@@ -2599,12 +2599,12 @@ img {
 }
 #aa-myaccount .aa-myaccount-area .aa-myaccount-login {
   display: inline;
-  float: left;
+  text-align: left;
   width: 100%;
 }
 #aa-myaccount .aa-myaccount-area .aa-myaccount-register {
   display: inline;
-  float: left;
+  text-align: left;
   width: 100%;
 }
 

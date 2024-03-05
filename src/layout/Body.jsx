@@ -7,6 +7,7 @@ import Collections from "../pages/collections";
 import Contact from "../pages/contact/Contact";
 import ErrorPage from "../pages/error/ErrorPage";
 import Home from "../pages/home/Home";
+
 import Login from "../pages/login/Login";
 import ProductDetails from "../pages/product-detail/ProductDetails";
 import { Product } from "../pages/product/Product";
