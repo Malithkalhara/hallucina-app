@@ -21,12 +21,12 @@ const App = () => {
 
   return (
     <div className="App">
-      {role !== "admin" ? (
-        <div className="d-flex flex-column">
-          <Header />
-          <Menu />
-        </div>
-      ) : null}
+      {/* {role !== "admin" ? ( */}
+      <div className="d-flex flex-column">
+        <Header />
+        <Menu />
+      </div>
+      {/* ) : null} */}
 
       <Body />
       <Footer />
