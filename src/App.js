@@ -10,34 +10,28 @@ import "./assets/css/theme-color/default-theme.css";
 import { Header } from "./layout/Header";
 import { Menu } from "./pages/menu/Menu";
 // import "./assets/css/sequence-theme.modern-slide-in.css";
+import { useState } from "react";
 import "./assets/css/style.css";
 import "./assets/css/theme-color/default-theme.css";
 import { Body } from "./layout/Body";
 import { Footer } from "./layout/Footer";
 
-function App() {
-  // useEffect(() => {
-  //   jsScripts.map((url) => {
-  //     const script = document.createElement("script");
-  //     script.src = url;
-  //     script.async = true;
-  //     document.body.appendChild(script);
-  //     return () => {
-  //       document.body.removeChild(script);
-  //     };
-  //   });
-  // }, []);
+const App = () => {
+  const [role, setRole] = useState("admin");
 
   return (
     <div className="App">
-      <div className="d-flex flex-column">
-        <Header />
-        <Menu />
-      </div>
+      {role !== "admin" ? (
+        <div className="d-flex flex-column">
+          <Header />
+          <Menu />
+        </div>
+      ) : null}
+
       <Body />
       <Footer />
     </div>
   );
-}
+};
 
 export default App;

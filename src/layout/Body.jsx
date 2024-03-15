@@ -8,6 +8,7 @@ import Contact from "../pages/contact/Contact";
 import ErrorPage from "../pages/error/ErrorPage";
 import Home from "../pages/home/Home";
 
+import AdminPanel from "../components/AdminPanel";
 import Login from "../pages/login/Login";
 import ProductDetails from "../pages/product-detail/ProductDetails";
 import { Product } from "../pages/product/Product";
@@ -49,6 +50,10 @@ export const Body = () => {
     {
       path: "/collections/*",
       element: <Collections />,
+    },
+    {
+      path: "/admin",
+      element: <AdminPanel />,
     },
     {
       path: "/*",
