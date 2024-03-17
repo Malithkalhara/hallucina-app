@@ -26,7 +26,7 @@ export const Body = () => {
     },
     {
       path: "/account",
-      element: user.isLogged ? <Account /> : <Home/>,
+      element: user.isLogged ? <Home /> : <Account/>,
     },
     {
       path: "/login",

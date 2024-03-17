@@ -4,8 +4,23 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 import logo from "../assets/img/Picture1.png";
+import { useDispatch, useSelector } from "react-redux";
+import { getUser } from "../redux/reducers/authSlice";
+import { Popover } from "antd";
+import { logout } from "../redux/reducers/authSlice";
+import { UseDispatch } from "react-redux";
 
 export const Header = () => {
+  const user = useSelector(getUser);
+  const dispatch = useDispatch();
+
+  // console.log(user);
+
+  const handleLogout = () => {
+    dispatch(logout());
+    localStorage.removeItem("token");
+    localStorage.removeItem("refreshToken");
+  };
   return (
     <div>
       <header id="aa-header">
@@ -20,7 +35,8 @@ export const Header = () => {
                         className="aa-logo"
                         style={{
                           padding: "10px",
-                        }}>
+                        }}
+                      >
                         <Link to="/">
                           <img
                             src={logo}
@@ -28,7 +44,8 @@ export const Header = () => {
                             style={{
                               width: "100px",
                               marging: "30px",
-                            }}></img>
+                            }}
+                          ></img>
                         </Link>
                       </div>
                     </div>
@@ -64,7 +81,8 @@ export const Header = () => {
                                 <a className="aa-cartbox-img" href="#">
                                   <img
                                     src="img/woman-small-2.jpg"
-                                    alt="img"></img>
+                                    alt="img"
+                                  ></img>
                                 </a>
                                 <div className="aa-cartbox-info">
                                   <h4>
@@ -80,7 +98,8 @@ export const Header = () => {
                                 <a className="aa-cartbox-img" href="#">
                                   <img
                                     src="img/woman-small-1.jpg"
-                                    alt="img"></img>
+                                    alt="img"
+                                  ></img>
                                 </a>
                                 <div className="aa-cartbox-info">
                                   <h4>
@@ -105,17 +124,39 @@ export const Header = () => {
                             </ul>
                             <a
                               className="aa-cartbox-checkout aa-primary-btn"
-                              href="checkout.html">
+                              href="checkout.html"
+                            >
                               Checkout
                             </a>
                           </div>
                         </div>
                         <div
                           className="aa-cartbox d-flex justify-content-center "
-                          style={{ paddingLeft: "5px" }}>
+                          style={{ paddingLeft: "5px" }}
+                        >
                           <Link className="aa-cart-link" to="/account">
                             {/* <div className="aa-browse-btn fa-xs"> */}
-                            <FontAwesomeIcon icon={faUser} size="lg" />
+                            <Popover
+                              placement="bottom"
+                              content={
+                                user.isLogged ? (
+                                  <button
+                                    className="btn aa-primary-btn"
+                                    onClick={handleLogout}
+                                  >
+                                    Logout
+                                  </button>
+                                ) : (
+                                  <Link to="/account">
+                                    <button className="btn aa-primary-btn">
+                                      Login
+                                    </button>
+                                  </Link>
+                                )
+                              }
+                            >
+                              <FontAwesomeIcon icon={faUser} size="lg" />
+                            </Popover>
                             {/* </div> */}
                           </Link>
                         </div>
