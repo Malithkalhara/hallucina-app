@@ -12,8 +12,13 @@ import AdminPanel from "../components/AdminPanel";
 import Login from "../pages/login/Login";
 import ProductDetails from "../pages/product-detail/ProductDetails";
 import { Product } from "../pages/product/Product";
+import { useSelector } from "react-redux";
+import { getUser } from "../redux/reducers/authSlice";
 
 export const Body = () => {
+  const user = useSelector(getUser)
+
+
   const router = [
     {
       path: "/",
@@ -21,7 +26,7 @@ export const Body = () => {
     },
     {
       path: "/account",
-      element: <Account />,
+      element: user.isLogged ? <Account /> : <Home/>,
     },
     {
       path: "/login",
