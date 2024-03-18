@@ -1,7 +1,102 @@
-import React from "react";
+import React, { useState } from "react";
 import { BreadCrums } from "../../components/BreadCrums/BreadCrums";
+import { ApiClient } from "../../utils/ApiClient";
+import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { login } from "../../redux/reducers/authSlice";
 
 const Account = () => {
+  const [email, setEmail] = useState(null);
+  const [password, setPassword] = useState(null);
+  const [registerEmail, setRegisterEmail] = useState(null);
+  const [registerPassword, setRegisterPassword] = useState(null);
+
+  const [isValidPassword, setIsValidPassword] = useState(false);
+  const [isValidEmail, setIsValidEmail] = useState(false);
+  const [isRegisterValidPassword, setIsRegisterValidPassword] = useState(false);
+  const [isRegisterValidEmail, setIsRegisterValidEmail] = useState(false);
+  const navigate = useNavigate();
+  const dispatch = useDispatch();
+
+  const onLoginPasswordChange = (e) => {
+    setPassword(e.target.value);
+  };
+  const onLoginEmailChange = (e) => {
+    setEmail(e.target.value);
+  };
+  const onRegisterPasswordChange = (e) => {
+    setRegisterPassword(e.target.value);
+  };
+  const onRegisterEmailChange = (e) => {
+    setRegisterEmail(e.target.value);
+  };
+
+  const handleRegister = async () => {
+    console.log(process.env.REACT_APP_API_URL);
+    // axios.post(`${process.env.REACT_APP_API_URL}/user/register`,{
+    await ApiClient.post("/user/register", {
+      email: registerEmail,
+      password: registerPassword,
+    })
+      .then(async (response) => {
+        console.log(response);
+        toast.success("User registered successfully");
+        await ApiClient.post("/user/login", {
+          email: registerEmail,
+          password: registerPassword,
+        })
+          .then((response) => {
+            console.log(response);
+            dispatch(login(response.data));
+            localStorage.setItem("token", response.data.accessToken);
+            localStorage.setItem("refreshToken", response.data.refreshToken);
+            navigate("/");
+            toast.success("User logged in successfully");
+          })
+          .catch((error) => {
+            toast.error(
+              `Error logging in user: ${error.response?.data?.message}`
+            );
+          });
+      })
+      .catch((error) => {
+        toast.error(`Error registering user: ${error.response?.data?.message}`);
+      })
+      .finally(() => {
+        setRegisterPassword(null);
+        setRegisterEmail(null);
+      });
+    // Add your registration logic here
+    console.log("Registering with:", registerEmail, registerPassword);
+  };
+
+  const handleLogin = async () => {
+    console.log(process.env.REACT_APP_API_URL);
+    // axios.post(`${process.env.REACT_APP_API_URL}/user/register`,{
+    await ApiClient.post("/user/login", {
+      email: email,
+      password: password,
+    })
+      .then(async (response) => {
+        console.log(response);
+        dispatch(login(response.data));
+        localStorage.setItem("token", response.data.accessToken);
+        localStorage.setItem("refreshToken", response.data.refreshToken);
+        navigate("/");
+        toast.success("User logged in successfully");
+      })
+      .catch((error) => {
+        toast.error(`Error registering user: ${error.response?.data?.message}`);
+      })
+      .finally(() => {
+        setRegisterPassword(null);
+        setRegisterEmail(null);
+      });
+    // Add your registration logic here
+    console.log("Registering with:", registerEmail, registerPassword);
+  };
+
   return (
     <div>
       <BreadCrums page="Account" />
@@ -17,18 +112,31 @@ const Account = () => {
                       <div className="mb-40">
                         <h4>Login</h4>
                       </div>
-                      <form action="" className="aa-login-form">
+                      <div className="aa-login-form">
                         <label for="">
                           Username or Email address<span>*</span>
                         </label>
                         <input
+                          value={email}
+                          onChange={(e) => onLoginEmailChange(e)}
                           type="text"
-                          placeholder="Username or email"></input>
+                          placeholder="Username or email"
+                          name="email"
+                        ></input>
                         <label for="">
                           Password<span>*</span>
                         </label>
-                        <input type="password" placeholder="Password"></input>
-                        <button type="submit" className="aa-browse-btn">
+                        <input
+                          value={password}
+                          type="password"
+                          placeholder="Password"
+                          onChange={(e) => onLoginPasswordChange(e)}
+                        ></input>
+                        <button
+                          className="aa-browse-btn"
+                          disabled={isValidEmail && isValidPassword}
+                          onClick={handleLogin}
+                        >
                           Login
                         </button>
                         <label className="rememberme" for="rememberme">
@@ -38,27 +146,42 @@ const Account = () => {
                         <p className="aa-lost-password">
                           <a href="#">Lost your password?</a>
                         </p>
-                      </form>
+                      </div>
                     </div>
                   </div>
                   <div className="col-md-6">
                     <div className="aa-myaccount-register">
                       <h4>Register</h4>
-                      <form action="" className="aa-login-form">
+                      <div className="aa-login-form">
                         <label for="">
                           Username or Email address<span>*</span>
                         </label>
                         <input
                           type="text"
-                          placeholder="Username or email"></input>
+                          placeholder="Username or email"
+                          value={registerEmail}
+                          onChange={(e) => onRegisterEmailChange(e)}
+                          name="email"
+                        ></input>
                         <label for="">
                           Password<span>*</span>
                         </label>
-                        <input type="password" placeholder="Password"></input>
-                        <button type="submit" className="aa-browse-btn">
+                        <input
+                          type="password"
+                          placeholder="Password"
+                          value={registerPassword}
+                          onChange={(e) => onRegisterPasswordChange(e)}
+                        ></input>
+                        <button
+                          className="aa-browse-btn"
+                          onClick={handleRegister}
+                          disabled={
+                            isRegisterValidEmail && isRegisterValidPassword
+                          }
+                        >
                           Register
                         </button>
-                      </form>
+                      </div>
                     </div>
                   </div>
                 </div>
