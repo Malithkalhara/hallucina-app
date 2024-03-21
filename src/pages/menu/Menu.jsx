@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
 
 export const Menu = () => {
-  const [collapsed, setCollapsed] = React.useState(true);
-  const [active, setActive] = React.useState(1);
+  const dispatch = useDispatch();
+  const [collapsed, setCollapsed] = useState(true);
+  const [active, setActive] = useState(1);
   const navHeaders = [
     {
       key: 1,

@@ -7,10 +7,19 @@ import { Popover } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import logo from "../assets/img/Picture1.png";
 import { getUser, logout } from "../redux/reducers/authSlice";
+import { updateIsHome } from "../redux/reducers/homeViewSlice";
 
 export const Header = () => {
   const user = useSelector(getUser);
   const dispatch = useDispatch();
+
+  const handleHome = () => {
+    dispatch(updateIsHome({ homeView: true }));
+  };
+
+  const handleAdmin = () => {
+    dispatch(updateIsHome({ homeView: false }));
+  };
 
   const handleLogout = () => {
     dispatch(logout());
@@ -32,7 +41,7 @@ export const Header = () => {
                         style={{
                           padding: "10px",
                         }}>
-                        <Link to="/">
+                        <Link to="/" onClick={handleHome}>
                           <img
                             src={logo}
                             alt="logo img"
@@ -130,11 +139,13 @@ export const Header = () => {
                               placement="bottom"
                               content={
                                 user.isLogged ? (
-                                  <button
-                                    className="btn aa-primary-btn"
-                                    onClick={handleLogout}>
-                                    Logout
-                                  </button>
+                                  <div>
+                                    <button
+                                      className="btn aa-primary-btn"
+                                      onClick={handleLogout}>
+                                      Logout
+                                    </button>
+                                  </div>
                                 ) : (
                                   <Link to="/account">
                                     <button className="btn aa-primary-btn">
@@ -148,6 +159,15 @@ export const Header = () => {
                             {/* </div> */}
                           </Link>
                         </div>
+                        {user.role === "admin" ? (
+                          <div>
+                            <Link to="/admin" onClick={handleAdmin}>
+                              <button className="btn aa-primary-btn">
+                                Admin Panel
+                              </button>
+                            </Link>
+                          </div>
+                        ) : null}
                       </div>
                     </div>
                   </div>

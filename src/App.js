@@ -20,6 +20,7 @@ import "./assets/css/theme-color/default-theme.css";
 import { Body } from "./layout/Body";
 import { Footer } from "./layout/Footer";
 import { getUser, login, logout } from "./redux/reducers/authSlice";
+import { getIsHome } from "./redux/reducers/homeViewSlice";
 import { ApiClient } from "./utils/ApiClient";
 import { refreshToken } from "./utils/tokenUtil";
 
@@ -35,6 +36,7 @@ const App = () => {
   const [elapsedTime, setElapsedTime] = useState(0);
   const timeout = 30 * 60 * 1000; // in milliseconds
   const refreshTimeout = 20 * 60; // in seconds
+  const homeState = useSelector(getIsHome);
 
   useEffect(() => {
     const token = localStorage.getItem("token");
@@ -154,12 +156,10 @@ const App = () => {
 
   return (
     <div className="App">
-      {userData?.role !== "admin" ? (
-        <div className="d-flex flex-column">
-          <Header />
-          <Menu />
-        </div>
-      ) : null}
+      <div className="d-flex flex-column">
+        <Header />
+        {userData?.role === "admin" && !homeState?.homeView ? null : <Menu />}
+      </div>
 
       <Body />
       <Footer />
