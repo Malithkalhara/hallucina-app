@@ -3,7 +3,6 @@ import poloShirtMan from "../../assets/img/man/polo-shirt-1.png";
 import womenSmall from "../../assets/img/woman-small-1.jpg";
 import { BreadCrums } from "../../components/BreadCrums/BreadCrums";
 
-
 export const Product = ({ title }) => {
   return (
     <div>
@@ -27,6 +26,165 @@ export const Product = ({ title }) => {
       <section id="aa-product-category">
         <div class="container">
           <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-md-pull-9">
+              <aside class="aa-sidebar">
+                <div class="aa-sidebar-widget">
+                  <h3>Category</h3>
+                  <ul class="aa-catg-nav">
+                    <li>
+                      <a href="#">Men</a>
+                    </li>
+                    <li>
+                      <a href="">Women</a>
+                    </li>
+                    <li>
+                      <a href="">Accessories</a>
+                    </li>
+                    <li>
+                      <a href="">Jewelery</a>
+                    </li>
+                    <li>
+                      <a href="">Other</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="aa-sidebar-widget">
+                  <h3>Tags</h3>
+                  <div class="tag-cloud">
+                    <a href="#">Shirt</a>
+                    <a href="#">Dresses</a>
+                    <a href="#">Pants</a>
+                    <a href="#">Hand Bag</a>
+                    <a href="#">Costume Sets</a>
+                    <a href="#">Footware</a>
+                    <a href="#">Hair</a>
+                  </div>
+                </div>
+
+                {/* <div class="aa-sidebar-widget">
+                  <h3>Shop By Price</h3>
+
+                  <div class="aa-sidebar-price-range">
+                    <form action="">
+                      <div
+                        id="skipstep"
+                        class="noUi-target noUi-ltr noUi-horizontal noUi-background"
+                      ></div>
+                      <span id="skip-value-lower" class="example-val">
+                        30.00
+                      </span>
+                      <span id="skip-value-upper" class="example-val">
+                        100.00
+                      </span>
+                      <button class="aa-filter-btn" type="submit">
+                        Filter
+                      </button>
+                    </form>
+                  </div>
+                </div> */}
+
+                {/* <div class="aa-sidebar-widget">
+                  <h3>Shop By Color</h3>
+                  <div class="aa-color-tag">
+                    <a class="aa-color-green" href="#"></a>
+                    <a class="aa-color-yellow" href="#"></a>
+                    <a class="aa-color-pink" href="#"></a>
+                    <a class="aa-color-purple" href="#"></a>
+                    <a class="aa-color-blue" href="#"></a>
+                    <a class="aa-color-orange" href="#"></a>
+                    <a class="aa-color-gray" href="#"></a>
+                    <a class="aa-color-black" href="#"></a>
+                    <a class="aa-color-white" href="#"></a>
+                    <a class="aa-color-cyan" href="#"></a>
+                    <a class="aa-color-olive" href="#"></a>
+                    <a class="aa-color-orchid" href="#"></a>
+                  </div>
+                </div> */}
+
+                <div class="aa-sidebar-widget">
+                  <h3>Recently Views</h3>
+                  <div class="aa-recently-views">
+                    <ul>
+                      <li>
+                        <a href="#" class="aa-cartbox-img">
+                          <img alt="img" src={womenSmall}></img>
+                        </a>
+                        <div class="aa-cartbox-info">
+                          <h4>
+                            <a href="#">Product Name</a>
+                          </h4>
+                          <p>1 x $250</p>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" class="aa-cartbox-img">
+                          <img alt="img" src={womenSmall}></img>
+                        </a>
+                        <div class="aa-cartbox-info">
+                          <h4>
+                            <a href="#">Product Name</a>
+                          </h4>
+                          <p>1 x $250</p>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" class="aa-cartbox-img">
+                          <img alt="img" src={womenSmall}></img>
+                        </a>
+                        <div class="aa-cartbox-info">
+                          <h4>
+                            <a href="#">Product Name</a>
+                          </h4>
+                          <p>1 x $250</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="aa-sidebar-widget">
+                  <h3>Top Rated Products</h3>
+                  <div class="aa-recently-views">
+                    <ul>
+                      <li>
+                        <a href="#" class="aa-cartbox-img">
+                          <img alt="img" src={womenSmall}></img>
+                        </a>
+                        <div class="aa-cartbox-info">
+                          <h4>
+                            <a href="#">Product Name</a>
+                          </h4>
+                          <p>1 x $250</p>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" class="aa-cartbox-img">
+                          <img alt="img" src={womenSmall}></img>
+                        </a>
+                        <div class="aa-cartbox-info">
+                          <h4>
+                            <a href="#">Product Name</a>
+                          </h4>
+                          <p>1 x $250</p>
+                        </div>
+                      </li>
+                      <li>
+                        <a href="#" class="aa-cartbox-img">
+                          <img alt="img" src={womenSmall}></img>
+                        </a>
+                        <div class="aa-cartbox-info">
+                          <h4>
+                            <a href="#">Product Name</a>
+                          </h4>
+                          <p>1 x $250</p>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </aside>
+            </div>
             <div class="col-lg-9 col-md-9 col-sm-8 col-md-push-3">
               <div class="aa-product-catg-content">
                 <div class="aa-product-catg-head">
@@ -67,9 +225,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                            src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -95,14 +251,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -111,7 +269,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -124,9 +283,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                            src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -149,14 +306,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -165,7 +324,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -178,9 +338,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                           src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -206,14 +364,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -222,7 +382,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -231,9 +392,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                           src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -259,14 +418,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -275,7 +436,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -288,9 +450,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                            src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -313,14 +473,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -329,7 +491,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -338,9 +501,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                           src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -366,14 +527,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -382,7 +545,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -391,9 +555,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                            src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -419,14 +581,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -435,7 +599,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -448,9 +613,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                            src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -473,14 +636,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -489,7 +654,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -502,9 +668,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                            src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -530,14 +694,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -546,7 +712,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -559,9 +726,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                           src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -584,14 +749,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -600,7 +767,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -613,9 +781,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                           src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -641,14 +807,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -657,7 +825,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -666,9 +835,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                            src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -694,14 +861,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -710,7 +879,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -723,9 +893,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                           src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -749,14 +917,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -765,7 +935,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -774,9 +945,7 @@ export const Product = ({ title }) => {
                     <li>
                       <figure>
                         <a class="aa-product-img" href="#">
-                          <img
-                           src={poloShirtMan}
-                            alt="polo shirt img"></img>
+                          <img src={poloShirtMan} alt="polo shirt img"></img>
                         </a>
                         <a class="aa-add-card-btn" href="#">
                           <span class="fa fa-shopping-cart"></span>Add To Cart
@@ -802,14 +971,16 @@ export const Product = ({ title }) => {
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Add to Wishlist">
+                          title="Add to Wishlist"
+                        >
                           <span class="fa fa-heart-o"></span>
                         </a>
                         <a
                           href="#"
                           data-toggle="tooltip"
                           data-placement="top"
-                          title="Compare">
+                          title="Compare"
+                        >
                           <span class="fa fa-exchange"></span>
                         </a>
                         <a
@@ -818,7 +989,8 @@ export const Product = ({ title }) => {
                           data-placement="top"
                           title="Quick View"
                           data-toggle="modal"
-                          data-target="#quick-view-modal">
+                          data-target="#quick-view-modal"
+                        >
                           <span class="fa fa-search"></span>
                         </a>
                       </div>
@@ -828,10 +1000,11 @@ export const Product = ({ title }) => {
                   <div
                     class="modal fade"
                     id="quick-view-modal"
-                    tabindex="-1"
+                    tabIndex="-1"
                     role="dialog"
                     aria-labelledby="myModalLabel"
-                    aria-hidden="true">
+                    aria-hidden="true"
+                  >
                     <div class="modal-dialog">
                       <div class="modal-content">
                         <div class="modal-body">
@@ -839,7 +1012,8 @@ export const Product = ({ title }) => {
                             type="button"
                             class="close"
                             data-dismiss="modal"
-                            aria-hidden="true">
+                            aria-hidden="true"
+                          >
                             &times;
                           </button>
                           <div class="row">
@@ -847,15 +1021,18 @@ export const Product = ({ title }) => {
                               <div class="aa-product-view-slider">
                                 <div
                                   class="simpleLens-gallery-container"
-                                  id="demo-1">
+                                  id="demo-1"
+                                >
                                   <div class="simpleLens-container">
                                     <div class="simpleLens-big-image-container">
                                       <a
                                         class="simpleLens-lens-image"
-                                        data-lens-image="img/view-slider/large/polo-shirt-1.png">
+                                        data-lens-image="img/view-slider/large/polo-shirt-1.png"
+                                      >
                                         <img
                                           src="img/view-slider/medium/polo-shirt-1.png"
-                                          class="simpleLens-big-image"></img>
+                                          class="simpleLens-big-image"
+                                        ></img>
                                       </a>
                                     </div>
                                   </div>
@@ -864,14 +1041,16 @@ export const Product = ({ title }) => {
                                       href="#"
                                       class="simpleLens-thumbnail-wrapper"
                                       data-lens-image="img/view-slider/large/polo-shirt-1.png"
-                                      data-big-image="img/view-slider/medium/polo-shirt-1.png">
+                                      data-big-image="img/view-slider/medium/polo-shirt-1.png"
+                                    >
                                       <img src="img/view-slider/thumbnail/polo-shirt-1.png"></img>
                                     </a>
                                     <a
                                       href="#"
                                       class="simpleLens-thumbnail-wrapper"
                                       data-lens-image="img/view-slider/large/polo-shirt-3.png"
-                                      data-big-image="img/view-slider/medium/polo-shirt-3.png">
+                                      data-big-image="img/view-slider/medium/polo-shirt-3.png"
+                                    >
                                       <img src="img/view-slider/thumbnail/polo-shirt-3.png"></img>
                                     </a>
 
@@ -879,7 +1058,8 @@ export const Product = ({ title }) => {
                                       href="#"
                                       class="simpleLens-thumbnail-wrapper"
                                       data-lens-image="img/view-slider/large/polo-shirt-4.png"
-                                      data-big-image="img/view-slider/medium/polo-shirt-4.png">
+                                      data-big-image="img/view-slider/medium/polo-shirt-4.png"
+                                    >
                                       <img src="img/view-slider/thumbnail/polo-shirt-4.png"></img>
                                     </a>
                                   </div>
@@ -977,164 +1157,6 @@ export const Product = ({ title }) => {
                   </nav>
                 </div>
               </div>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-md-pull-9">
-              <aside class="aa-sidebar">
-                <div class="aa-sidebar-widget">
-                  <h3>Category</h3>
-                  <ul class="aa-catg-nav">
-                    <li>
-                      <a href="#">Men</a>
-                    </li>
-                    <li>
-                      <a href="">Women</a>
-                    </li>
-                    <li>
-                      <a href="">Kids</a>
-                    </li>
-                    <li>
-                      <a href="">Electornics</a>
-                    </li>
-                    <li>
-                      <a href="">Sports</a>
-                    </li>
-                  </ul>
-                </div>
-
-                <div class="aa-sidebar-widget">
-                  <h3>Tags</h3>
-                  <div class="tag-cloud">
-                    <a href="#">Fashion</a>
-                    <a href="#">Ecommerce</a>
-                    <a href="#">Shop</a>
-                    <a href="#">Hand Bag</a>
-                    <a href="#">Laptop</a>
-                    <a href="#">Head Phone</a>
-                    <a href="#">Pen Drive</a>
-                  </div>
-                </div>
-
-                <div class="aa-sidebar-widget">
-                  <h3>Shop By Price</h3>
-
-                  <div class="aa-sidebar-price-range">
-                    <form action="">
-                      <div
-                        id="skipstep"
-                        class="noUi-target noUi-ltr noUi-horizontal noUi-background"></div>
-                      <span id="skip-value-lower" class="example-val">
-                        30.00
-                      </span>
-                      <span id="skip-value-upper" class="example-val">
-                        100.00
-                      </span>
-                      <button class="aa-filter-btn" type="submit">
-                        Filter
-                      </button>
-                    </form>
-                  </div>
-                </div>
-
-                <div class="aa-sidebar-widget">
-                  <h3>Shop By Color</h3>
-                  <div class="aa-color-tag">
-                    <a class="aa-color-green" href="#"></a>
-                    <a class="aa-color-yellow" href="#"></a>
-                    <a class="aa-color-pink" href="#"></a>
-                    <a class="aa-color-purple" href="#"></a>
-                    <a class="aa-color-blue" href="#"></a>
-                    <a class="aa-color-orange" href="#"></a>
-                    <a class="aa-color-gray" href="#"></a>
-                    <a class="aa-color-black" href="#"></a>
-                    <a class="aa-color-white" href="#"></a>
-                    <a class="aa-color-cyan" href="#"></a>
-                    <a class="aa-color-olive" href="#"></a>
-                    <a class="aa-color-orchid" href="#"></a>
-                  </div>
-                </div>
-
-                <div class="aa-sidebar-widget">
-                  <h3>Recently Views</h3>
-                  <div class="aa-recently-views">
-                    <ul>
-                      <li>
-                        <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src={womenSmall}></img>
-                        </a>
-                        <div class="aa-cartbox-info">
-                          <h4>
-                            <a href="#">Product Name</a>
-                          </h4>
-                          <p>1 x $250</p>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src={womenSmall}></img>
-                        </a>
-                        <div class="aa-cartbox-info">
-                          <h4>
-                            <a href="#">Product Name</a>
-                          </h4>
-                          <p>1 x $250</p>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src={womenSmall}></img>
-                        </a>
-                        <div class="aa-cartbox-info">
-                          <h4>
-                            <a href="#">Product Name</a>
-                          </h4>
-                          <p>1 x $250</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div class="aa-sidebar-widget">
-                  <h3>Top Rated Products</h3>
-                  <div class="aa-recently-views">
-                    <ul>
-                      <li>
-                        <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src={womenSmall}></img>
-                        </a>
-                        <div class="aa-cartbox-info">
-                          <h4>
-                            <a href="#">Product Name</a>
-                          </h4>
-                          <p>1 x $250</p>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src={womenSmall}></img>
-                        </a>
-                        <div class="aa-cartbox-info">
-                          <h4>
-                            <a href="#">Product Name</a>
-                          </h4>
-                          <p>1 x $250</p>
-                        </div>
-                      </li>
-                      <li>
-                        <a href="#" class="aa-cartbox-img">
-                          <img alt="img" src={womenSmall}></img>
-                        </a>
-                        <div class="aa-cartbox-info">
-                          <h4>
-                            <a href="#">Product Name</a>
-                          </h4>
-                          <p>1 x $250</p>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </aside>
             </div>
           </div>
         </div>
