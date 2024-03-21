@@ -33,8 +33,6 @@ const Account = () => {
   };
 
   const handleRegister = async () => {
-    console.log(process.env.REACT_APP_API_URL);
-    // axios.post(`${process.env.REACT_APP_API_URL}/user/register`,{
     await ApiClient.post("/user/register", {
       email: registerEmail,
       password: registerPassword,
@@ -72,8 +70,6 @@ const Account = () => {
   };
 
   const handleLogin = async () => {
-    console.log(process.env.REACT_APP_API_URL);
-    // axios.post(`${process.env.REACT_APP_API_URL}/user/register`,{
     await ApiClient.post("/user/login", {
       email: email,
       password: password,
