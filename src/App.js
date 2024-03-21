@@ -10,23 +10,22 @@ import "./assets/css/theme-color/default-theme.css";
 import { Header } from "./layout/Header";
 import { Menu } from "./pages/menu/Menu";
 // import "./assets/css/sequence-theme.modern-slide-in.css";
-import { useState } from "react";
+import { jwtDecode } from "jwt-decode";
+import { useEffect, useState } from "react";
+import toast from "react-hot-toast";
+import { useIdleTimer } from "react-idle-timer";
+import { useDispatch, useSelector } from "react-redux";
 import "./assets/css/style.css";
 import "./assets/css/theme-color/default-theme.css";
 import { Body } from "./layout/Body";
 import { Footer } from "./layout/Footer";
-import { useEffect } from "react";
+import { getUser, login, logout } from "./redux/reducers/authSlice";
 import { ApiClient } from "./utils/ApiClient";
-import { useDispatch } from "react-redux";
-import { login, logout } from "./redux/reducers/authSlice";
-import { jwtDecode } from "jwt-decode";
-import { useSelector } from "react-redux";
-import { useIdleTimer } from "react-idle-timer";
 import { refreshToken } from "./utils/tokenUtil";
-import toast from "react-hot-toast";
 
 const App = () => {
   const [role, setRole] = useState("admin");
+  const userData = useSelector(getUser);
   const dispatch = useDispatch();
   const [isLoading, setIsLoading] = useState(false);
   const [state, setState] = useState("Active");
@@ -44,7 +43,6 @@ const App = () => {
         token,
       })
         .then((response) => {
-          console.log(response.data);
           const decodedToken = jwtDecode(token);
           dispatch(
             login({
@@ -55,7 +53,6 @@ const App = () => {
           );
         })
         .catch((error) => {
-          console.log(error);
           dispatch(logout());
           localStorage.removeItem("token");
           localStorage.removeItem("refreshToken");
@@ -77,7 +74,6 @@ const App = () => {
               className="btn btn-sm btn-primary ms-2"
               onClick={async () => {
                 try {
-                  console.log("Refreshing token when idle")
                   await refreshToken();
                   const decodedToken = jwtDecode(localStorage.getItem("token"));
                   dispatch(
@@ -91,8 +87,7 @@ const App = () => {
                 } catch (error) {
                   toast.error(`Error refreshing token: ${error.message}`);
                 }
-              }}
-            >
+              }}>
               Login
             </button>
             <button
@@ -102,8 +97,7 @@ const App = () => {
                 localStorage.removeItem("token");
                 localStorage.removeItem("refreshToken");
                 toast.dismiss(t.id);
-              }}
-            >
+              }}>
               Logout
             </button>
           </div>
@@ -120,7 +114,6 @@ const App = () => {
   };
 
   const onAction = () => {
-    console.log(count)
     setCount(count + 1);
   };
 
@@ -140,11 +133,9 @@ const App = () => {
 
   useEffect(() => {
     if (isLogged) {
-      console.log(isLogged)
       const interval = setInterval(() => {
         const currentTime = new Date();
         const elapsedMilliseconds = currentTime - startTime;
-        console.log(Math.floor(elapsedMilliseconds / 1000));
         setElapsedTime(Math.floor(elapsedMilliseconds / 1000));
       }, 1000);
 
@@ -155,9 +146,7 @@ const App = () => {
   }, [startTime, isLogged]);
 
   useEffect(() => {
-    console.log(elapsedTime, refreshTimeout, state, isLogged);
     if (elapsedTime > refreshTimeout && state === "Active" && isLogged) {
-      console.log("refreshing token");
       setStartTime(new Date());
       refreshToken();
     }
@@ -165,12 +154,12 @@ const App = () => {
 
   return (
     <div className="App">
-      {/* {role !== "admin" ? ( */}
-      <div className="d-flex flex-column">
-        <Header />
-        <Menu />
-      </div>
-      {/* ) : null} */}
+      {userData?.role !== "admin" ? (
+        <div className="d-flex flex-column">
+          <Header />
+          <Menu />
+        </div>
+      ) : null}
 
       <Body />
       <Footer />

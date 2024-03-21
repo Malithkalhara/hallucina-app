@@ -1,10 +1,11 @@
+import { jwtDecode } from "jwt-decode";
 import React, { useState } from "react";
-import { BreadCrums } from "../../components/BreadCrums/BreadCrums";
-import { ApiClient } from "../../utils/ApiClient";
 import toast from "react-hot-toast";
+import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
-import { login } from "../../redux/reducers/authSlice";
+import { BreadCrums } from "../../components/BreadCrums/BreadCrums";
+import { getUser, login } from "../../redux/reducers/authSlice";
+import { ApiClient } from "../../utils/ApiClient";
 
 const Account = () => {
   const [email, setEmail] = useState(null);
@@ -16,6 +17,7 @@ const Account = () => {
   const [isValidEmail, setIsValidEmail] = useState(false);
   const [isRegisterValidPassword, setIsRegisterValidPassword] = useState(false);
   const [isRegisterValidEmail, setIsRegisterValidEmail] = useState(false);
+  const userData = useSelector(getUser);
   const navigate = useNavigate();
   const dispatch = useDispatch();
 
@@ -38,18 +40,18 @@ const Account = () => {
       password: registerPassword,
     })
       .then(async (response) => {
-        console.log(response);
         toast.success("User registered successfully");
         await ApiClient.post("/user/login", {
           email: registerEmail,
           password: registerPassword,
         })
           .then((response) => {
-            console.log(response);
-            dispatch(login(response.data));
+            const decodedToken = jwtDecode(response.data.accessToken);
+            dispatch(login({ ...decodedToken }));
             localStorage.setItem("token", response.data.accessToken);
             localStorage.setItem("refreshToken", response.data.refreshToken);
             navigate("/");
+
             toast.success("User logged in successfully");
           })
           .catch((error) => {
@@ -65,8 +67,6 @@ const Account = () => {
         setRegisterPassword(null);
         setRegisterEmail(null);
       });
-    // Add your registration logic here
-    console.log("Registering with:", registerEmail, registerPassword);
   };
 
   const handleLogin = async () => {
@@ -75,11 +75,16 @@ const Account = () => {
       password: password,
     })
       .then(async (response) => {
-        console.log(response);
-        dispatch(login(response.data));
+        const decodedToken = jwtDecode(response.data.accessToken);
+        dispatch(login({ ...decodedToken }));
         localStorage.setItem("token", response.data.accessToken);
         localStorage.setItem("refreshToken", response.data.refreshToken);
-        navigate("/");
+        if (decodedToken?.role === "admin") {
+          console.log(userData);
+          navigate("/admin");
+        } else {
+          navigate("/");
+        }
         toast.success("User logged in successfully");
       })
       .catch((error) => {
@@ -89,8 +94,6 @@ const Account = () => {
         setRegisterPassword(null);
         setRegisterEmail(null);
       });
-    // Add your registration logic here
-    console.log("Registering with:", registerEmail, registerPassword);
   };
 
   return (
@@ -117,8 +120,7 @@ const Account = () => {
                           onChange={(e) => onLoginEmailChange(e)}
                           type="text"
                           placeholder="Username or email"
-                          name="email"
-                        ></input>
+                          name="email"></input>
                         <label for="">
                           Password<span>*</span>
                         </label>
@@ -126,13 +128,11 @@ const Account = () => {
                           value={password}
                           type="password"
                           placeholder="Password"
-                          onChange={(e) => onLoginPasswordChange(e)}
-                        ></input>
+                          onChange={(e) => onLoginPasswordChange(e)}></input>
                         <button
                           className="aa-browse-btn"
                           disabled={isValidEmail && isValidPassword}
-                          onClick={handleLogin}
-                        >
+                          onClick={handleLogin}>
                           Login
                         </button>
                         <label className="rememberme" for="rememberme">
@@ -157,8 +157,7 @@ const Account = () => {
                           placeholder="Username or email"
                           value={registerEmail}
                           onChange={(e) => onRegisterEmailChange(e)}
-                          name="email"
-                        ></input>
+                          name="email"></input>
                         <label for="">
                           Password<span>*</span>
                         </label>
@@ -166,15 +165,13 @@ const Account = () => {
                           type="password"
                           placeholder="Password"
                           value={registerPassword}
-                          onChange={(e) => onRegisterPasswordChange(e)}
-                        ></input>
+                          onChange={(e) => onRegisterPasswordChange(e)}></input>
                         <button
                           className="aa-browse-btn"
                           onClick={handleRegister}
                           disabled={
                             isRegisterValidEmail && isRegisterValidPassword
-                          }
-                        >
+                          }>
                           Register
                         </button>
                       </div>
